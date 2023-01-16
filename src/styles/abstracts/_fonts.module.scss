@@ -1,0 +1,34 @@
+/* Font Faces */
+@font-face {
+  font-family: 'XX';
+  src: url('/fonts/23XX.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-title: XX,
+serif;
+
+@font-face {
+  font-family: 'kollektif';
+  src: url('/fonts/kollektif-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+$font-body: kollektif,
+serif;
+
+/* Heading Text */
+$heading-alignment: center;
+$heading-size: 15vw;
+$heading-weight: 700;
+
+/* Title Text */
+$title-size: 47px;
+
+/* Body Text */
+$body-alignment: center;
+$body-size: 25px;
