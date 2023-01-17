@@ -12,7 +12,7 @@ serif;
 
 @font-face {
   font-family: 'kollektif';
-  src: url('/fonts/kollektif-webfont.woff2') format('woff2');
+  src: url('/fonts/kollektif.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -23,7 +23,8 @@ serif;
 
 /* Heading Text */
 $heading-alignment: center;
-$heading-size: 15vw;
+$heading-size: 13em;
+$heading-size-mobile: 5em;
 $heading-weight: 700;
 
 /* Title Text */

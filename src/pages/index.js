@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/pages/_home.module.scss'
-
-const inter = Inter({ subsets: ['latin'] })
+import { Arrows, Logo } from '@/components/Icons'
+import Marquee from 'react-fast-marquee'
 
 export default function Home() {
   return (
@@ -15,14 +13,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page">
-        <hero>
+        <hero-no-padding>
           <div className="column">
-            <h1>4788</h1>
-            <h2>4788</h2>
-            <p>4788</p>
-            <p><a href="./">4788</a></p>
+            <Marquee speed={25} gradient={false}>
+              <h1-ticker>4788//Can&apos;t Control//</h1-ticker>
+            </Marquee>
+            <Arrows className="arrows" />
           </div>
-        </hero>
+        </hero-no-padding>
+        <heros>
+          <h2>More Content</h2>
+          <h2>More Content</h2>
+          <h2>More Content</h2>
+          <h2>More Content</h2>
+        </heros>
       </div>
     </>
   )

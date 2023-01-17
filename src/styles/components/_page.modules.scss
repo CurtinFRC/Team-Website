@@ -2,6 +2,7 @@
 
 .page {
   position: inherit;
+  z-index: 1;
 
   h1 {
     text-align: var.$heading-alignment;
@@ -12,6 +13,11 @@
     font-weight: var.$heading-weight;
     max-width: 100%;
     transition: font-size 0.1s ease-in;
+  }
+
+  h1-ticker {
+    @extend h1;
+    color: var.$color-body-text;
   }
 
   h2 {
@@ -60,6 +66,15 @@
     vertical-align: middle;
   }
 
+  .arrows {
+    color: var.$color-foreground;
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 10px;
+    height: 55px;
+    width: 100%;
+  }
+
   .line {
     background-color: var.$color-foreground;
     width: 33%;
@@ -87,13 +102,7 @@
 
   @media screen and (max-width: 700px) {
     h1 {
-      font-size: var.$heading-size*1.25;
-    }
-
-    h1-image {
-      background-attachment: unset;
-      background-size: auto;
-      filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.85));
+      font-size: var.$heading-size-mobile;
     }
 
     h2 {

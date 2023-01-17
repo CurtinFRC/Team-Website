@@ -1,5 +1,5 @@
 /* Colors */
-$color-foreground: rgb(255, 255, 255);
-$color-mid-ground: rgb(255, 255, 255);
-$color-background: rgb(0, 0, 0);
-$color-body-text: rgb(255, 255, 255);
+$color-foreground: var(--color-foreground);
+$color-mid-ground: var(--color-mid-ground);
+$color-background: var(--color-background);
+$color-body-text: var(--color-body-text);
