@@ -15,11 +15,6 @@
     transition: font-size 0.1s ease-in;
   }
 
-  h1-ticker {
-    @extend h1;
-    color: var.$color-body-text;
-  }
-
   h2 {
     text-align: var.$heading-alignment;
     line-height: 1em;
@@ -37,6 +32,25 @@
     line-height: 1.33em;
     color: var.$color-body-text;
     font-size: var.$body-size;
+  }
+
+  .marquee {
+    overflow: visible;
+
+    h1 {
+      color: var.$color-body-text;
+    }
+
+    h2 {
+      text-shadow: 0px 0px 30px var.$color-foreground;
+    }
+
+    h1,
+    h2 {
+      margin: unset;
+      margin: 0.5em 0em 0.5em 0em;
+      max-width: unset;
+    }
   }
 
 
@@ -64,6 +78,16 @@
   icon {
     height: 100%;
     vertical-align: middle;
+  }
+
+  .logo {
+    color: var.$color-foreground;
+    position: absolute;
+    height: 20em;
+    width: auto;
+    z-index: 3;
+    background: radial-gradient(circle, var.$color-background -40%, rgba(0, 0, 0, 0) 68%);
+    filter: drop-shadow(0px 0px 5px var.$color-foreground);
   }
 
   .arrows {
@@ -101,6 +125,10 @@
   }
 
   @media screen and (max-width: 700px) {
+    .logo {
+      height: 15em;
+    }
+
     h1 {
       font-size: var.$heading-size-mobile;
     }

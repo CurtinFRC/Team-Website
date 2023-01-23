@@ -15,14 +15,16 @@ export default function Home() {
       <div className="page">
         <hero-no-padding>
           <div className="column">
-            <Marquee speed={25} gradient={false}>
-              <h1-ticker>4788//Can&apos;t Control//</h1-ticker>
+            <Logo className="logo" />
+            <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
+              <h1>Can&apos;t Control//</h1>
             </Marquee>
             <Arrows className="arrows" />
           </div>
         </hero-no-padding>
         <heros>
           <h2>More Content</h2>
+          <p>content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content </p>
           <h2>More Content</h2>
           <h2>More Content</h2>
           <h2>More Content</h2>

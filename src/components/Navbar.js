@@ -128,6 +128,7 @@ export default class Navbar extends React.Component {
           <div ref={this.logoRef}>
             <Link href="/" passHref legacyBehavior>
               <a
+                className="button logo"
                 onClick={() => {
                   if (this.state.useDropdown && this.state.openDropdown) {
                     this.changeDropdown();
@@ -137,7 +138,7 @@ export default class Navbar extends React.Component {
                   }
                 }}
               >
-                <a className="button logo">4788</a>
+                4788
               </a>
             </Link>
           </div>
@@ -163,6 +164,7 @@ export default class Navbar extends React.Component {
               strokeColor={"var(--color-foreground)"}
               onClick={() => {
                 this.changeDropdown();
+                this.setState(() => ({ reverseIcon: !this.state.reverseIcon }));
               }}
               autoPlay={true}
               animation={menu4}

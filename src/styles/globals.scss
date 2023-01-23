@@ -3,10 +3,10 @@
 @use './pages/index.module'as pag;
 
 :root {
-  --color-foreground: rgb(236, 0, 140);
-  --color-mid-ground: rgb(255, 204, 0);
-  --color-background: rgb(15, 15, 15);
-  --color-body-text: rgb(255, 255, 255);
+  --color-foreground: #ec008c;
+  --color-mid-ground: #ffcc00;
+  --color-background: #0f0f0f;
+  --color-body-text: #ffffff;
 }
 
 html,
