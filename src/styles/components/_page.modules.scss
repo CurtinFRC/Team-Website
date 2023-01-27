@@ -42,7 +42,7 @@
     }
 
     h2 {
-      text-shadow: 0px 0px 30px var.$color-foreground;
+      text-shadow: var.$color-text-shadow;
     }
 
     h1,
@@ -125,6 +125,12 @@
   }
 
   @media screen and (max-width: 700px) {
+    .marquee {
+      h2 {
+        text-shadow: unset;
+      }
+    }
+
     .logo {
       height: 15em;
     }

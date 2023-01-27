@@ -7,8 +7,6 @@
   align-items: center;
   justify-content: var.$navbar-justify-content;
   z-index: 5;
-  /* 
-  background-color: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var.$color-mid-ground 100%); */
   background: rgba(0, 0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var.$color-background 55%);
   padding: var.$navbar-padding;
@@ -27,7 +25,7 @@
     font-weight: var.$navbar-font-weight;
     font-family: var.$font-title;
     transition: transform 0.25s;
-    text-shadow: 0px 0px 45px var.$color-foreground;
+    text-shadow: var.$color-text-shadow;
   }
 
   .logo {
@@ -50,6 +48,12 @@
     .button {
       margin: 25px 0px;
       font-size: var.$navbar-font-size * 1.75;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .button {
+      text-shadow: unset;
     }
   }
 }
