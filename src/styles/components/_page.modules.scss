@@ -84,6 +84,7 @@
     color: var.$color-foreground;
     position: absolute;
     height: 20em;
+    max-height: 40vh;
     width: auto;
     z-index: 3;
     background: radial-gradient(circle, var.$color-background -40%, rgba(0, 0, 0, 0) 68%);

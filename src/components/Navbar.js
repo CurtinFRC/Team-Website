@@ -51,7 +51,7 @@ export default class Navbar extends React.Component {
       openDropdownInt: !this.state.openDropdown ? 1 : 0,
     }));
     this.setState(() => ({
-      openDropdownColor: !this.state.openDropdown ? "var(--color-background)" : "rgba(0, 0, 0, 0)",
+      openDropdownColor: !this.state.openDropdown ? "var(--color-overlay)" : "rgba(0, 0, 0, 0)",
     }));
   }
   render() {
