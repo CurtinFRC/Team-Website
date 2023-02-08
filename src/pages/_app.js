@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }) {
             color="#ec008c"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
           <meta
             name="msapplication-TileColor"
             content="#0f0f0f"
