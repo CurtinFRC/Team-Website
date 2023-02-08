@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
           <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
           <meta
             name="msapplication-TileColor"
-            content="#ec008c"
+            content="#0f0f0f"
           />
           <meta name="theme-color" content="#0f0f0f" />
           <meta
@@ -48,7 +48,7 @@ export default function App({ Component, pageProps }) {
           <meta name="darkreader-lock" />
           <meta
             name="keywords"
-            content="Ruben, Panzich, Rubeanie, Portfolio, About, Links, Contact, Artist, Developer"
+            content="Team, 4788, FRC, Curtin University, Robotics, Club, Sponsors, Socials, WARP, STEM"
           />
           <meta key="robots" name="robots" content="index,follow" />
           <meta key="googlebot" name="googlebot" content="index,follow" />\
