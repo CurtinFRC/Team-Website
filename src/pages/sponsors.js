@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Arrows, Logo } from '@/components/Icons'
 import Marquee from 'react-fast-marquee'
+import Sponsor from '@/components/Sponsor'
 
 export default function Home() {
   return (
@@ -12,17 +13,25 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page">
-        <hero-no-padding>
+        <hero>
+          <Marquee speed={28} gradient={false} direction='right'>
+            <h3>Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//</h3>
+          </Marquee>
           <div className="column">
-            <Logo className="logo" />
-            <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
-              <h1>Sponsors</h1>
-            </Marquee>
-            <Arrows className="arrows" />
+            <Sponsor
+              title="Curtin University"
+              body="TMP"
+              img="/tmp/Curtin.png"
+            />
+            <Sponsor
+              title="Altronics"
+              body="TMP"
+              img="/tmp/Altronics.png"
+              flipped={true}
+            />
           </div>
-        </hero-no-padding>
-        <heros>
-        </heros>
+        </hero>
+        <heros></heros>
       </div>
     </>
   )

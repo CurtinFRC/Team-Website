@@ -37,7 +37,7 @@ export default class Navbar extends React.Component {
             useDropdown:
               this.logoRef.current.offsetWidth +
                 this.pagesRef.current.offsetWidth >=
-              this.navRef.current.offsetWidth / 1.4,
+              this.navRef.current.offsetWidth / 1.2,
           }
         );
       }
