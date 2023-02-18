@@ -7,7 +7,6 @@ export default function Home() {
       <Head>
         <title>Page cannot be found</title>
         <meta name="description" content="Error 404, page cannot be found." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page">
         <hero-no-padding>
