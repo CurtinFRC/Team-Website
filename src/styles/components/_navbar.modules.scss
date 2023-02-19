@@ -5,6 +5,7 @@
   position: var.$navbar-position;
   flex-direction: var.$navbar-flex-direction;
   align-items: center;
+  align-content: center;
   justify-content: var.$navbar-justify-content;
   z-index: 5;
   background: rgba(0, 0, 0, 0);
@@ -49,6 +50,11 @@
       margin: 25px 0px;
       font-size: var.$navbar-font-size * 1.75;
     }
+  }
+
+  .hamburger-react {
+    margin: 0 10px 0 10px;
+    filter: drop-shadow(0px 0px 5px var.$color-foreground);
   }
 
   @media screen and (max-width: 700px) {

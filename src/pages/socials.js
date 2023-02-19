@@ -15,8 +15,8 @@ export default function Home() {
             <h3>Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//</h3>
           </Marquee>
           <div className="column posts">
-            <Facebook url="https://www.facebook.com/andrewismusic/posts/451971596293956"/>
-{/*             <Instagram url="https://www.instagram.com/p/Cn6y2y8LWNu/"/>
+{/*             <Facebook url="https://www.facebook.com/andrewismusic/posts/451971596293956"/>
+            <Instagram url="https://www.instagram.com/p/Cn6y2y8LWNu/"/>
             <Youtube url=""/> */}
           </div>
         </hero>
