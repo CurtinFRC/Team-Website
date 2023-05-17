@@ -1,6 +1,27 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  cacheOnFrontEndNav: true,
+});
 
-module.exports = nextConfig
+module.exports = withPWA({
+  async rewrites() {
+    return [
+      {
+        source: "/admin/:path*",
+        destination:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:3333/admin/:path*"
+            : "/admin/index.html",
+      },
+    ];
+  },
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
+  reactStrictMode: true,
+/*   images: {
+    domains: ["res.cloudinary.com"],
+  }, */
+});

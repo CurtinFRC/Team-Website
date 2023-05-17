@@ -1,0 +1,65 @@
+@use '../abstracts/index.module'as var;
+
+.navbar {
+  display: flex;
+  position: var.$navbar-position;
+  flex-direction: var.$navbar-flex-direction;
+  align-items: center;
+  align-content: center;
+  justify-content: var.$navbar-justify-content;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var.$color-background 55%);
+  padding: var.$navbar-padding;
+  padding: var.$padding-safe;
+  width: var.$navbar-width;
+  height: var.$navbar-height;
+  color: var.$color-foreground;
+  transition: background-color 0.25s;
+
+  .button {
+    flex: 0 1 auto;
+    padding: var.$navbar-button-padding;
+    line-height: var.$navbar-button-line-height;
+    color: var.$color-foreground;
+    font-size: var.$navbar-font-size;
+    font-weight: var.$navbar-font-weight;
+    font-family: var.$font-title;
+    transition: transform 0.25s;
+    text-shadow: var.$color-text-shadow;
+  }
+
+  .logo {
+    font-size: 50px;
+  }
+
+  .dropdown {
+    position: fixed;
+    z-index: 6;
+    background: var.$color-overlay;
+    margin: var.$inverted-padding-safe;
+    padding: var.$navbar-padding;
+    padding: var.$padding-safe;
+    width: var.$navbar-width;
+    height: calc(100vh - var.$navbar-height);
+    color: var.$color-foreground;
+    transform-origin: top;
+    transition: transform 0.25s, opacity 0.25s, background-color 0.25s;
+
+    .button {
+      margin: 25px 0px;
+      font-size: var.$navbar-font-size * 1.75;
+    }
+  }
+
+  .hamburger-react {
+    margin: 0 10px 0 10px;
+    filter: drop-shadow(0px 0px 5px var.$color-foreground);
+  }
+
+  @media screen and (max-width: 700px) {
+    .button {
+      text-shadow: unset;
+    }
+  }
+}
