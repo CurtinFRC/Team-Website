@@ -23,5 +23,9 @@
     "react-social-media-embed": "^2.3.4",
     "react-useanimations": "^2.10.0",
     "sass": "^1.58.3"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.6",
+    "typescript": "5.0.4"
   }
 }
