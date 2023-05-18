@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Arrows, Logo } from '@/components/Icons'
+import { Arrows, Logo } from '../components/Icons.tsx'
 import Marquee from 'react-fast-marquee'
-import Sponsor from '@/components/Sponsor'
+import Sponsor from '../components/Sponsor.tsx'
 
 export default function Home() {
   return (

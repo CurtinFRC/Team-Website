@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="page">
         <hero-no-padding>
           <div className="column">
+            <Image src="/robot2023.jpg" alt="Our 2023 robot Whiplash" width={600} height={336}/>
           </div>
         </hero-no-padding>
         <heros>

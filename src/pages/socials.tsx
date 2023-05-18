@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Marquee from 'react-fast-marquee'
-import { Facebook } from '../components/Post';
+import { Facebook } from '../components/Post.tsx';
 
 export default function Home() {
   return (

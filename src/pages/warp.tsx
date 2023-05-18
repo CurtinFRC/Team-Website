@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Arrows, Logo } from '@/components/Icons'
+import { Arrows, Logo } from '../components/Icons.tsx'
 import Marquee from 'react-fast-marquee'
 
 export default function Home() {

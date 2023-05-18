@@ -1,6 +1,6 @@
 import '../styles/globals.scss'
-import Layout from "../components/Layout";
-import Signature from "../components/Signature";
+import Layout from "../components/Layout.tsx";
+import Signature from "../components/Signature.tsx";
 import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
