@@ -24,8 +24,12 @@ const navbarData = {
 }
 
 export default class Navbar extends React.Component {
+  navRef;
+  logoRef;
+  pagesRef;
   constructor(props) {
     super(props)
+    // React.createRef().current
     this.navRef = React.createRef()
     this.logoRef = React.createRef()
     this.pagesRef = React.createRef()
@@ -81,7 +85,7 @@ export default class Navbar extends React.Component {
       <div
         className="navbar"
         ref={this.navRef}
-        style={{ backgroundColor: this.state.openDropdownColor }}
+        style={{ backgroundColor: this.state.openDropdownColor}}
       >
         <div
           className="dropdown"
