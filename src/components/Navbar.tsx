@@ -29,7 +29,6 @@ export default class Navbar extends React.Component {
   pagesRef;
   constructor(props) {
     super(props)
-    // React.createRef().current
     this.navRef = React.createRef()
     this.logoRef = React.createRef()
     this.pagesRef = React.createRef()
@@ -85,13 +84,15 @@ export default class Navbar extends React.Component {
       <div
         className="navbar"
         ref={this.navRef}
-        style={{ backgroundColor: this.state.openDropdownColor}}
+        // style={{ backgroundColor: this.state.openDropdownColor}}
+        // style={{ backgroundColor: 'rgba(0, 0, 0, 0)'}}
+        style={{backgroundColor: "${this.state.openDropdownColor}"}}
       >
         <div
           className="dropdown"
           style={{
-            transform: `translate(0, 50vh) scale(1, ${this.state.openDropdownInt})`,
-            opacity: this.state.openDropdownInt,
+            transform: `translate(0, 50vh) scale(1, 0)`,
+            opacity: 0,
           }}
         >
           <div
@@ -105,7 +106,7 @@ export default class Navbar extends React.Component {
               <a
                 className="button"
                 style={{
-                  transform: `scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})`,
+                  transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",
                 }}
               >
                 Home
@@ -121,7 +122,7 @@ export default class Navbar extends React.Component {
                 <a
                   className="button"
                   style={{
-                    transform: `scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})`,
+                    transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",
                   }}
                 >
                   {page.title}
@@ -142,16 +143,16 @@ export default class Navbar extends React.Component {
           </a>
           </Link>
         </div>
-        <div ref={this.pagesRef} hidden={this.state.showDropdown}>
+        <div ref={this.pagesRef} hidden={false}>
           {navbarData.pages.map((page) => (
             <Link key={page.title} href={page.url} passHref legacyBehavior>
               <a className="button">{page.title}</a>
             </Link>
           ))}
         </div>
-        <div hidden={!this.state.showDropdown}>
+        <div hidden={true}>
           <Hamburger
-            toggled={this.state.setOpen}
+            toggled={false}
             toggle={this.changeDropdown}
             size={37.5}
             direction='left'

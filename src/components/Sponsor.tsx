@@ -1,14 +1,15 @@
 import React from "react";
 import Image from 'next/image'
 
-export default class Sponsor extends React.Component {
+export default class Sponsor extends React.Component<{}, { value: string }> {
   constructor(props) {
     super(props);
+    
   }
   render() {
     return (
-      <div className="sponsor">
-        <div className={`row${this.props.flipped ? " reverse" : ""}`} >
+            <div className="sponsor">
+        <div className={"row${this.props.flipped ? reverse : 0}"} >
           <div className="text">
             <h2>{this.props.title}</h2>
             <p>{this.props.body}</p>

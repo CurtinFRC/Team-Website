@@ -5,25 +5,28 @@
   "tasks": [
     {
       "label": "run dev",
-      "type": "npm",
-      "script": "dev",
-      "group": "build",
-      "presentation": {
-        "reveal": "always",
-        "panel": "new"
-      }
+      "type": "shell",
+      "command": "yarn dev",
+      "group": "build"
     },
 
     {
       "label": "git commit",
       "type": "shell",
-      "command": "./push.bat",
+      "command": "./.vscode/push.bat",
       "group": "none",
       "presentation": {
         "reveal": "always",
         "panel": "new"
       }
 
+    },
+
+    {
+      "label": "run build",
+      "type": "shell",
+      "command": "yarn build",
+      "group": "build"
     }
   ],
 

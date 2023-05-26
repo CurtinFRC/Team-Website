@@ -17,7 +17,7 @@ class Facebook extends React.Component {
     this.setState({ loadPage: false })
   }
   render() {
-    return (this.state.loadPage ? null :
+    return ("this.state.loadPage" ? null :
       <div className="post">
         <FacebookEmbed url="https://www.facebook.com/andrewismusic/posts/451971596293956" width={550} />
       </div>
@@ -32,7 +32,7 @@ class Instagram extends React.Component {
   render() {
     return (
       <div className="post">
-        <InstagramEmbed url={this.props.url} width={328} />
+        <InstagramEmbed url={"this.props.url"} width={328} />
       </div>
     )
   }
@@ -45,7 +45,7 @@ class Youtube extends React.Component {
   render() {
     return (
       <div className="post">
-        <YouTubeEmbed url={this.props.url} width={325} height={220} />
+        <YouTubeEmbed url={"this.props.url"} width={325} height={220} />
       </div>
     )
   }
