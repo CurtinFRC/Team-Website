@@ -3,13 +3,14 @@ import Marquee from 'react-fast-marquee'
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Page cannot be found</title>
         <meta name="description" content="Error 404, page cannot be found." />
       </Head>
+    {/* <hero-no-padding> */}
       <div className="page">
-        <hero-no-padding>
+        <div className='hero-no-padding'>
           <div className="column">
             <Marquee speed={28} gradient={false} style={{ opacity: 0.8 }} direction='right'>
               <h2>Page Not Found//Page Not Found//Page Not Found//Page Not Found//</h2>
@@ -21,8 +22,9 @@ export default function Home() {
               <h2>Page Not Found//Page Not Found//Page Not Found//Page Not Found//</h2>
             </Marquee>
           </div>
-        </hero-no-padding>
+    {/* </hero-no-padding> */}
       </div>
-    </>
+    </div>
+    </div>
   )
 }

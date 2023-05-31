@@ -64,7 +64,7 @@
   }
 
 
-  hero {
+  .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,13 +74,13 @@
     min-height: 100vh;
   }
 
-  hero-no-padding {
-    @extend hero;
+  .hero-no-padding {
+    @extend .hero;
     padding-top: unset !important;
   }
 
-  heros {
-    @extend hero-no-padding;
+  .heros {
+    @extend .hero-no-padding;
     justify-content: flex-start;
     min-height: unset;
   }
