@@ -20,7 +20,7 @@
     "react-dom": "18.2.0",
     "react-fast-marquee": "^1.5.2",
     "react-html-comment": "^2.0.16",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.10.1",
     "react-social-media-embed": "^2.3.4",
     "react-useanimations": "^2.10.0",
     "sass": "^1.58.3"
