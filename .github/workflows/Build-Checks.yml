@@ -1,0 +1,30 @@
+name: Build-Checks
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  Ubuntu-Build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install
+      run: yarn install
+    - name: Build
+      run: yarn run build
+
+  Windows-Build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install
+      run: yarn install
+    - name: Build
+      run: yarn run build
