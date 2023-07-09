@@ -8,10 +8,10 @@ const navbarData = {
       title: 'Robots',
       url: '/robots',
     },
-    //      {
-    //   title: 'Socials',
-    //   url: '/socials',
-    // }, 
+      {
+      title: 'Socials',
+      url: '/socials',
+    }, 
     {
       title: 'Sponsors',
       url: '/sponsors',
