@@ -21,7 +21,4 @@ module.exports = withPWA({
     defaultLocale: "en",
   },
   reactStrictMode: true,
-/*   images: {
-    domains: ["res.cloudinary.com"],
-  }, */
 });

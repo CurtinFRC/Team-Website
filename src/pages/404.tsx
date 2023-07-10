@@ -8,7 +8,6 @@ export default function Home() {
         <title>Page cannot be found</title>
         <meta name="description" content="Error 404, page cannot be found." />
       </Head>
-    {/* <hero-no-padding> */}
       <div className="page">
         <div className='hero-no-padding'>
           <div className="column">
@@ -22,7 +21,6 @@ export default function Home() {
               <h2>Page Not Found//Page Not Found//Page Not Found//Page Not Found//</h2>
             </Marquee>
           </div>
-    {/* </hero-no-padding> */}
       </div>
     </div>
     </div>
