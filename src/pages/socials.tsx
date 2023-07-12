@@ -12,7 +12,7 @@ export default function Home() {
       <div className="page">
         <div className='hero' style={{ justifyContent: "flex-start"}}>
           <Marquee speed={28} gradient={false} direction='right'>
-            <h3>Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//</h3>
+            <h3>Socials//Socials//Socials//Socials//Socials//Socials//</h3>
           </Marquee>
           <div className="column posts">
             <Facebook url="https://www.facebook.com/photo?fbid=650239157108479&set=a.468333625299034"/>
