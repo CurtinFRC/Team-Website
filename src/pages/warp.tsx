@@ -3,8 +3,11 @@ import { Arrows, Logo } from '../components/Icons'
 import Marquee from 'react-fast-marquee'
 import { Youtube, Facebook, Instagram } from '../components/Post'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
+  var w = 1397;
+  var h = 1468;
   return (
     <>
       <Head>
@@ -14,7 +17,8 @@ export default function Home() {
       <div className="page">
         <div className='hero-no-padding'>
           <div className="column">
-            <Logo className="logo" />
+            <Image className="logo" src="/copy-of-final.png" alt="warp logo" width={w} height={h}/>
+            {/* <Logo className="logo" /> */}
             <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
               <h1>Warp</h1>
             </Marquee>
