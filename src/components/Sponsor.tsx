@@ -1,3 +1,4 @@
+// TODO make sponsors closer
 import React from "react";
 import Image from 'next/image'
 
@@ -14,7 +15,7 @@ export default class Sponsor extends React.Component<Props, {}> {
         <div className={"row${this.props.flipped ? reverse : 0}"} >
           <div className="text">
             <h2>{this.props.title}</h2>
-            <p>{this.props.body}</p>
+            {/* <p>{this.props.body}</p> */}
           </div>
           <div className="image">
             <Image src={this.props.img} alt="" fill={true} />

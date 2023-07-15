@@ -20,10 +20,10 @@ const navbarData = {
       title: 'Warp',
       url: '/warp',
     },
-    {
-      title: 'Join',
-      url: '/join-now',
-    }
+    // {
+    //   title: 'Join',
+    //   url: '/join-now',
+    // }
   ],
 }
 
@@ -153,7 +153,11 @@ export default class Navbar extends React.Component {
               <a className="button">{page.title}</a>
             </Link>
           ))}
+          <Link href="https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR" passHref legacyBehavior>
+            <a className='button'>Join</a>
+          </Link>
         </div>
+          
         <div hidden={true}>
           <Hamburger
             toggled={false}
