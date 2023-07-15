@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { Arrows, Logo } from '../components/Icons'
 import Marquee from 'react-fast-marquee'
+import { Youtube, Facebook, Instagram } from '../components/Post'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -19,7 +21,24 @@ export default function Home() {
             <Arrows className="arrows" />
           </div>
         </div>
-        <div className='heros'> </div>
+        <div className='heros'>
+          {/* <Youtube url='https://www.youtube.com/@waroboticsplayoffs'/> */}
+          {/* <Facebook url='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'/> */}
+          {/* <Instagram url='https://www.instagram.com/p/CulUayTvbrV/?img_index=1'/> */}
+          <h2> WARP Official Social Media</h2>
+          {/* <h2><a href='https://www.instagram.com/waroboticsplayoffs/'> Instagram </a></h2>
+          <h2><a href='https://www.youtube.com/@waroboticsplayoffs'> Youtube </a></h2>
+          <h2><a href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'> Facebook </a></h2> */}
+          <Link href='https://www.instagram.com/waroboticsplayoffs/'>
+            <h2> Instagram </h2>
+          </Link>
+          <Link href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'>
+            <h2> Facebook </h2>
+          </Link>
+          <Link href='https://www.youtube.com/@waroboticsplayoffs'>
+            <h2> Youtube </h2>
+          </Link>
+        </div>
       </div>
     </>
   )
