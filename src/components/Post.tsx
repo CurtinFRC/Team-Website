@@ -1,4 +1,3 @@
-//TODO: Fix Facebook HTML embeds, for now the social page will be removed from the navbar
 import React from 'react'
 import {
   FacebookEmbed,
