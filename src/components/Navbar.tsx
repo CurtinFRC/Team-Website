@@ -20,6 +20,10 @@ const navbarData = {
       title: 'Warp',
       url: '/warp',
     },
+    {
+      title: 'Join',
+      url: '/join-now',
+    }
   ],
 }
 
