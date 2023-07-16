@@ -17,6 +17,10 @@ const navbarData = {
       url: '/sponsors',
     },
     {
+      title: 'Outreach',
+      url: '/outreach'
+    },
+    {
       title: 'Warp',
       url: '/warp',
     },
