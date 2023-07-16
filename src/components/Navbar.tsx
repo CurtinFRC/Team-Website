@@ -20,10 +20,6 @@ const navbarData = {
       title: 'Warp',
       url: '/warp',
     },
-    // {
-    //   title: 'Join',
-    //   url: '/join-now',
-    // }
   ],
 }
 
@@ -106,55 +102,32 @@ export default class Navbar extends React.Component {
               this.changeDropdown(false)
             }}
           >
-            <Link href="/" passHref legacyBehavior>
-              <a
-                className="button"
-                style={{
-                  transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",
-                }}
-              >
+            <Link href="/" className="button" style={{transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",}}>
                 Home
-              </a>
             </Link>
             {navbarData.pages.map((page) => (
-              <Link
-                key={`_${page.title}`}
-                href={page.url}
-                passHref
-                legacyBehavior
-              >
-                <a
-                  className="button"
-                  style={{
-                    transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",
-                  }}
-                >
+              <Link key={`_${page.title}`} href={page.url} className="button" style={{transform: "scale(${this.state.openDropdownInt}, ${this.state.openDropdownInt})",}}>
                   {page.title}
-                </a>
               </Link>
             ))}
+            <Link className='button' href="https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR">
+              Join
+            </Link>
           </div>
         </div>
         <div ref={this.logoRef}>
-          <Link href="/" passHref legacyBehavior>
-            <a
-            className="button logo"
-            onClick={() => {
-              this.changeDropdown(false)
-            }}
-          >
+          <Link href="/" className='button logo' onClick={() => { this.changeDropdown(false)}}>
             4788
-          </a>
           </Link>
         </div>
         <div ref={this.pagesRef} hidden={false}>
           {navbarData.pages.map((page) => (
-            <Link key={page.title} href={page.url} passHref legacyBehavior>
-              <a className="button">{page.title}</a>
+            <Link key={page.title} href={page.url} className='button'>
+              {page.title}
             </Link>
           ))}
-          <Link href="https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR" passHref legacyBehavior>
-            <a className='button'>Join</a>
+          <Link href="https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR" className='button'>
+            Join
           </Link>
         </div>
           

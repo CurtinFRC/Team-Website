@@ -17,18 +17,8 @@ export default function Home() {
             <h3>Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//Sponsors//</h3>
           </Marquee>
           <div className="column">
-            <Sponsor
-              title="Curtin University"
-              body="TMP"
-              img="/tmp/Curtin.png"
-              flipped={false}
-            />
-            <Sponsor
-              title="Altronics"
-              body="TMP"
-              img="/tmp/Altronics.png"
-              flipped={true}
-            />
+            <Sponsor title="Curtin University" body="TMP" img="/tmp/Curtin.png" flipped={false} />
+            <Sponsor title="Altronics" body="TMP" img="/tmp/Altronics.png" flipped={true} />
           </div>
         </div>
         <div className='heros'> </div>

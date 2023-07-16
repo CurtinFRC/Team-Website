@@ -5,7 +5,7 @@ import Image from 'next/image'
 type Props = {title: string, body: string, img: string, flipped: boolean}
 
 export default class Sponsor extends React.Component<Props, {}> {
-  constructor(props) {
+  constructor(props: Props) {
     super(props);
   }
 
