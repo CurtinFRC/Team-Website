@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Arrows, Logo } from '../components/Icons'
 import Marquee from 'react-fast-marquee'
-import { Youtube, Facebook, Instagram } from '../components/Post'
 import Link from 'next/link'
 import Image from 'next/image'
 

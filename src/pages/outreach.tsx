@@ -21,7 +21,7 @@ export default function Outreach() {
             </Marquee>
             <Arrows className="arrows" />
           </div>
-        </div>
+          </div>
         <div className="heros">
           <Content image={warpImage} url="https://www.facebook.com/profile.php?id=100094239134377" title="WARP" body="content content content"/>
           <Content image={roboAcademyImage} url="/" title="Robo Academy" body="content content more content" />

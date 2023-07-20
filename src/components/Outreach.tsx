@@ -5,10 +5,13 @@ type Props = {url: string, title: string, body: string, image: {src: string, w: 
 
 export default function outreach(props: Props) {
   return (
-    <div>
+    <div className="content">
       <h1> {props.title} </h1>
       <Image src={props.image.src} alt={props.title} width={props.image.w} height={props.image.h}/>
-      <p> {props.body} </p>
+      <p className="content"> {props.body} </p>
+      <Link href={props.url}>
+        To find out more click here!
+      </Link>
     </div>
   )
 }
