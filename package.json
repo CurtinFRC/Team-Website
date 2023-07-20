@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.4.9",
+    "@next/font": "13.4.10",
     "eslint": "8.44.0",
-    "eslint-config-next": "13.4.9",
+    "eslint-config-next": "13.4.10",
     "hamburger-react": "^2.5.0",
     "icon-gen": "^3.0.1",
-    "next": "13.4.9",
+    "next": "13.4.10",
     "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -26,7 +26,7 @@
     "sass": "^1.63.6"
   },
   "devDependencies": {
-    "@types/react": "18.2.14",
+    "@types/react": "18.2.15",
     "typescript": "5.1.6"
   }
 }
