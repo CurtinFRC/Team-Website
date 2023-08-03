@@ -2,4 +2,4 @@
 
 ## Contributing 
 
-Look in .github's Contributing.md if you want to contribute. 
+Look in at contributing in .github to get started! 
