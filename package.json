@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "eslint": "8.46.0",
-    "@next/font": "13.4.13",
+    "@next/font": "13.4.16",
     "eslint-config-next": "13.4.13",
     "hamburger-react": "^2.5.0",
     "icon-gen": "^3.0.1",
