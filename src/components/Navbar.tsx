@@ -16,10 +16,10 @@ const navbarData = {
       title: 'Sponsors',
       url: '/sponsors',
     },
-    {
-      title: 'Outreach',
-      url: '/outreach'
-    },
+//    {
+//      title: 'Outreach',
+//      url: '/outreach'
+//    },
     {
       title: 'Warp',
       url: '/warp',
