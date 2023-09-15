@@ -23,7 +23,7 @@
     "react-icons": "^4.11.0",
     "react-social-media-embed": "^2.3.4",
     "react-useanimations": "^2.10.0",
-    "sass": "^1.66.1"
+    "sass": "^1.67.0"
   },
   "devDependencies": {
     "@types/react": "18.2.21",
