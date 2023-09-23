@@ -13,6 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
     - name: Install Turbo
       run: npm install turbo -g
     - name: Install
@@ -26,6 +29,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
     - name: Install Turbo
       run: npm install turbo -g
     - name: Install
@@ -39,6 +45,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
     - name: Install Turbo
       run: npm install turbo -g
     - name: Install
