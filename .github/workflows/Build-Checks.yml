@@ -13,12 +13,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
+    - name: Install Turbo
+      run: npm install turbo -g
     - name: Install
-      run: yarn install
-    - name: Lint
-      run: yarn run lint
-    - name: Build
-      run: yarn run build
+      run: pnpm install
+    - name: Build and Lint
+      run: turbo build lint
 
   Windows-Build:
 
@@ -26,12 +29,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
+    - name: Install Turbo
+      run: npm install turbo -g
     - name: Install
-      run: yarn install
-    - name: Lint
-      run: yarn run lint
-    - name: Build
-      run: yarn run build
+      run: pnpm install
+    - name: Build and Lint
+      run: turbo build lint
 
   MacOS-Build:
 
@@ -39,9 +45,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - uses: pnpm/action-setup@v2.4.0
+      with:
+        version: latest
+    - name: Install Turbo
+      run: npm install turbo -g
     - name: Install
-      run: yarn install
-    - name: Lint
-      run: yarn run lint
-    - name: Build
-      run: yarn run build
+      run: pnpm install
+    - name: Build and Lint
+      run: turbo build lint
