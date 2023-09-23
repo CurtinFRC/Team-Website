@@ -14,11 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install
-      run: yarn install
+      run: pnpm install
     - name: Lint
-      run: yarn run lint
+      run: pnpm run lint
     - name: Build
-      run: yarn run build
+      run: pnpm run build
 
   Windows-Build:
 
@@ -27,11 +27,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install
-      run: yarn install
+      run: pnpm install
     - name: Lint
-      run: yarn run lint
+      run: pnpm run lint
     - name: Build
-      run: yarn run build
+      run: pnpm run build
 
   MacOS-Build:
 
@@ -40,8 +40,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Install
-      run: yarn install
+      run: pnpm install
     - name: Lint
-      run: yarn run lint
+      run: pnpm run lint
     - name: Build
-      run: yarn run build
+      run: pnpm run build
