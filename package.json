@@ -11,7 +11,7 @@
   "dependencies": {
     "eslint": "8.50.0",
     "@next/font": "13.5.3",
-    "eslint-config-next": "13.5.3",
+    "eslint-config-next": "13.5.4",
     "hamburger-react": "^2.5.0",
     "icon-gen": "^4.0.0",
     "next": "13.5.3",
