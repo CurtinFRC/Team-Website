@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@next/font':
-    specifier: 13.5.5
-    version: 13.5.5
+    specifier: 13.5.6
+    version: 13.5.6
   eslint:
     specifier: 8.51.0
     version: 8.51.0
@@ -53,8 +53,8 @@ dependencies:
 
 devDependencies:
   '@types/react':
-    specifier: 18.2.28
-    version: 18.2.28
+    specifier: 18.2.29
+    version: 18.2.29
   typescript:
     specifier: 5.2.2
     version: 5.2.2
@@ -1379,8 +1379,8 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/font@13.5.5:
-    resolution: {integrity: sha512-X1BwoqJ/ua9NLCFsWAZ3n3Q74tkHbbqf4YkI9VRn/InqUkY3TnyPao/aSCdJ5w4aWUZBZlOjZJiQnD6JnOCoMw==}
+  /@next/font@13.5.6:
+    resolution: {integrity: sha512-urmUq05uCVJsBqAAJEV+xK5OTTodrSxdiG+351SOSjlWctywdBM6qX+K9pIe3K48RxjfnxlBbXjGyOJAji+pfw==}
     dev: false
 
   /@next/swc-darwin-arm64@13.5.5:
@@ -1607,8 +1607,8 @@ packages:
     resolution: {integrity: sha512-RK/kBbYOQQHLYj9Z95eh7S6t7gq4Ojt/NT8HTk8bWVhA5DaF+5SMnxHKkP4gPNN3wAZkKP+VjAf0ebtYzf+fxg==}
     dev: true
 
-  /@types/react@18.2.28:
-    resolution: {integrity: sha512-ad4aa/RaaJS3hyGz0BGegdnSRXQBkd1CCYDCdNjBPg90UUpLgo+WlJqb9fMYUxtehmzF3PJaTWqRZjko6BRzBg==}
+  /@types/react@18.2.29:
+    resolution: {integrity: sha512-Z+ZrIRocWtdD70j45izShRwDuiB4JZqDegqMFW/I8aG5DxxLKOzVNoq62UIO82v9bdgi+DO1jvsb9sTEZUSm+Q==}
     dependencies:
       '@types/prop-types': 15.7.6
       '@types/scheduler': 0.16.3
