@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@next/font':
-    specifier: 14.0.0
-    version: 14.0.0
+    specifier: 14.0.1
+    version: 14.0.1
   eslint:
     specifier: 8.52.0
     version: 8.52.0
@@ -1379,8 +1379,8 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/font@14.0.0:
-    resolution: {integrity: sha512-E6Xg6yPYqOIbPmYkheY5qXjeJlDdwWzspU655QbJn+s0FSKOTS3b/SDKXeZxnyK9f2rTaovGRsU/KOCqZQongw==}
+  /@next/font@14.0.1:
+    resolution: {integrity: sha512-Kbhhjn7Fj/YoZcRtUb6RuLm/2JffH76fbLiFnV4EGkq6wRUAVA5bwbpI1D9KgmvSyaC2taWnmIuMFpTWl9Q92Q==}
     dev: false
 
   /@next/swc-darwin-arm64@14.0.0:
