@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@next/font':
     specifier: 14.0.2
-    version: 14.0.2(next@14.0.1)
+    version: 14.0.2(next@14.0.2)
   eslint:
     specifier: 8.53.0
     version: 8.53.0
@@ -1379,12 +1379,12 @@ packages:
       glob: 7.1.7
     dev: false
 
-  /@next/font@14.0.2(next@14.0.1):
+  /@next/font@14.0.2(next@14.0.2):
     resolution: {integrity: sha512-lJih8sNzs2rBRO7ySkyqheGKWAt50CmVB2fmIxAdb6mj0+1v4sU+9tQwM2mMus1K0QOVkXPSHb13+Tj5Iu+1wA==}
     peerDependencies:
       next: '*'
     dependencies:
-      next: 14.0.1(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
+      next: 14.0.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)
     dev: false
 
   /@next/swc-darwin-arm64@14.0.2:
