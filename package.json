@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.54.0",
+    "eslint": "8.55.0",
     "@next/font": "14.0.3",
     "eslint-config-next": "14.0.3",
     "hamburger-react": "^2.5.0",
