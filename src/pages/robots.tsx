@@ -14,6 +14,7 @@ export default function Home() {
             <Image src="/5663_2019.jpg" alt="Our 2019 robot KillSwitch" width={600} height={336}/>
             <p>Our 2019 robot KillSwitch: 
                   Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		<br/>
                   Competed at:
                   South Pacific Regional - Lost in Semi Finals
             </p>
