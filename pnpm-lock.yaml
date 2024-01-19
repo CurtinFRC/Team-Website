@@ -33,8 +33,8 @@ dependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   react-fast-marquee:
-    specifier: ^1.6.2
-    version: 1.6.2(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.6.3
+    version: 1.6.3(react-dom@18.2.0)(react@18.2.0)
   react-html-comment:
     specifier: ^2.0.16
     version: 2.0.16(react-dom@18.2.0)(react@18.2.0)
@@ -4179,8 +4179,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-fast-marquee@1.6.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-bXUuW1r+Yzd8ZjsPmMDy8WJMubHAZd/7n0W/IzUQHtd0iBfxWohP6hzCFnEHWMCOtC9wxSAq/BiEnig4kdI2Vw==}
+  /react-fast-marquee@1.6.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-oEISmNElv6lua/4i4uPYIteUKDxU0hAKKjH/tY2icje4GCns1rX6pIrkwVhjX0FMCIepUVqeyCchvqkiO/s2vw==}
     peerDependencies:
       react: '>= 16.8.0 || 18.0.0'
       react-dom: '>= 16.8.0 || 18.0.0'
