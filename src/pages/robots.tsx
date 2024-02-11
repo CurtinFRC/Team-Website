@@ -1,5 +1,7 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Head from 'next/head'
+import Image from 'next/image'
+import Marquee from 'react-fast-marquee'
+import { Arrows } from '../components/Icons'
 
 export default function Home() {
   return (
@@ -24,9 +26,18 @@ export default function Home() {
               <br />
               Competed at: South Pacific Regional - Lost in Semi Finals
             </p>
+            <h3>Our 2020 robot Overkill:</h3>
+            <p>
+              content content Content
+              <br/>
+              <br/>
+              Competed at:
+              <br/>
+              Content content content
+            </p>
           </div>
         </div>
-        <div className='heros'> </div>
+
       </div>
     </>
   );

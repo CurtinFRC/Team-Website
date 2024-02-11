@@ -21,7 +21,7 @@ export default function Home() {
                 Page Not Found//Page Not Found//Page Not Found//Page Not Found//
               </h2>
             </Marquee>
-            <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
+            <Marquee speed={50} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Error 404/Error 404/</h1>
             </Marquee>
             <Marquee

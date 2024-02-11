@@ -2,6 +2,7 @@
 @use './components/index.module' as com;
 @use './pages/index.module' as pag;
 
+@use './components/scrollbar.module' as scrollbar;
 :root {
   --color-foreground: #ec008c;
   --color-mid-ground: #ffcc00;
@@ -10,11 +11,18 @@
   --color-overlay: rgba(15, 15, 15, 0.7);
 }
 
+#parent {
+  display: flex;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: var.$font-body;
+  overflow-y: visible;
+
+
 }
 
 h1,
@@ -42,6 +50,20 @@ a {
   box-sizing: border-box;
   text-align: center;
   background: var.$color-background;
+}
+
+.popup {
+  display: none;
+  // position: absolute;
+  position: fixed;
+  bottom: 0; /* or use top: 0; */
+  background-color: #0000009f;
+  padding: 10px;
+  border: 3px solid var.$color-foreground;
+}
+
+.popup.active {
+  display: block;
 }
 
 .row-fixed {

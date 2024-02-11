@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Slant as Hamburger } from 'hamburger-react';
+import { TRUE } from 'sass';
 
 const navbarData = {
   pages: [
@@ -16,10 +17,10 @@ const navbarData = {
       title: 'Sponsors',
       url: '/sponsors',
     },
-    //    {
-    //      title: 'Outreach',
-    //      url: '/outreach'
-    //    },
+   {
+     title: 'Outreach',
+     url: '/outreach'
+   },
     {
       title: 'Warp',
       url: '/warp',
