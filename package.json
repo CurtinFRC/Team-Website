@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.56.0",
     "@next/font": "14.1.0",
+    "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
     "hamburger-react": "^2.5.0",
     "icon-gen": "^4.0.0",
@@ -23,7 +23,8 @@
     "react-icons": "^5.0.1",
     "react-social-media-embed": "^2.4.1",
     "react-useanimations": "^2.10.0",
-    "sass": "^1.70.0"
+    "sass": "^1.70.0",
+    "tb-link-preview": "^1.0.3"
   },
   "devDependencies": {
     "@types/react": "18.2.48",

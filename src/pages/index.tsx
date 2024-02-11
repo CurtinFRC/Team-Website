@@ -24,7 +24,7 @@ export default function Home() {
           <p>We are a community First Robotics Competition team based out of Curtin University from Western Australia (WA). Founded in 2013 we were the very first First team in WA and have started a variety of First programs here in WA. Along with ths we have also competed very succesfully in FRC for many years.</p>
           <h2>What do we do?</h2>
           <p>Our primary focuses are on competing in the FIRST Robotics Competition and spreading STEM (Science, Technology, Engineering, Maths) learning in our community. We run several programs FLL, RoboAcademy, WARP, TRS, and more, for details on this check out our outreach page. Through our programs we have helped start hundereds of FLL teams in metro and rural areas, created tens of FRC teams in WA schools, and reached thousands of young people though doing good STEM.</p>
-          <h2>Our Vision??</h2>
+          <h2>Our Vision?</h2>
           <p>Our vision is to IGNITE, IMPROVE, and INNOVATE FIRST in WA! This is to say that we leap to ignite a passion for STEM in students, improve the world around us for the betterment of all, and innovate programs and solutions on our robots and in our community.</p>
         </div>
       </div>

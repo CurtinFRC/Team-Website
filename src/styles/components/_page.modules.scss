@@ -1,8 +1,10 @@
 @use "../abstracts/index.module"as var;
 
+
 .page {
   position: inherit;
   z-index: 1;
+
 
   h1 {
     text-align: var.$heading-alignment;
@@ -93,6 +95,16 @@
   .logo {
     color: var.$color-foreground;
     position: absolute;
+    height: 20em;
+    max-height: 40vh;
+    width: auto;
+    z-index: 3;
+    background: radial-gradient(circle, var.$color-background -40%, rgba(0, 0, 0, 0) 68%);
+    filter: drop-shadow(0px 0px 5px var.$color-foreground);
+  }
+
+  .logo-normal {
+    color: var.$color-foreground;
     height: 20em;
     max-height: 40vh;
     width: auto;
