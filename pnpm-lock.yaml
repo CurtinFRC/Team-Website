@@ -42,8 +42,8 @@ dependencies:
     specifier: ^5.0.1
     version: 5.0.1(react@18.2.0)
   react-social-media-embed:
-    specifier: ^2.4.1
-    version: 2.4.1(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.5.9
+    version: 2.5.9(react-dom@18.2.0)(react@18.2.0)
   react-useanimations:
     specifier: ^2.10.0
     version: 2.10.0(react-dom@18.2.0)(react@18.2.0)
@@ -1652,6 +1652,10 @@ packages:
     resolution: {integrity: sha512-IDaobHimLQhjwsQ/NMwRVfa/yL7L/wriQPMhw1ZJall0KX6E1oxk29XMDeilW5qTIg5aoiqf5Udy8U/51aNoQQ==}
     dev: false
 
+  /@types/youtube-player@5.5.11:
+    resolution: {integrity: sha512-pM41CDBqJqBmTeJWnF7NOGz82IQoYOhqzMYXv5vKCXBqGiYSLldxMtpCk6KAEtADTy49S45AriYaCaZyeUX38Q==}
+    dev: false
+
   /@typescript-eslint/parser@6.7.2(eslint@8.56.0)(typescript@5.3.3):
     resolution: {integrity: sha512-KA3E4ox0ws+SPyxQf9iSI25R6b4Ne78ORhNHeVKrPQnoYsb9UhieoiRoJgrzgEeKGOXhcY1i8YtOeCHHTDa6Fw==}
     engines: {node: ^16.0.0 || >=18.0.0}
@@ -2247,8 +2251,8 @@ packages:
     engines: {node: '>=6.0'}
     dev: false
 
-  /classnames@2.3.2:
-    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+  /classnames@2.5.1:
+    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
     dev: false
 
   /clean-webpack-plugin@4.0.0(webpack@5.88.2):
@@ -4288,6 +4292,16 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
+  /react-html-props@2.0.9(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Q9wIP8hs4HFUb3CDh5tF1nKgZ4S9odU07tR/lZ+/9ePv+psxRy+mUn7ujjrCGwtrLA52AI41fXWr425yK1iyTA==}
+    peerDependencies:
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /react-icons@5.0.1(react@18.2.0):
     resolution: {integrity: sha512-WqLZJ4bLzlhmsvme6iFdgO8gfZP17rfjYEJ2m9RsZjZ+cc4k1hTzknEz63YS1MeT50kVzoa1Nz36f4BEx+Wigw==}
     peerDependencies:
@@ -4300,27 +4314,29 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
-  /react-social-media-embed@2.4.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EqKau5b/ZmHY1uvF+A3HwiE1fluYyQxB6bV5lb6tLYcoTWfhUZ7lhyRihd7aP2nbdIhOPaE5Kr0Bzjz2a8BAdA==}
+  /react-social-media-embed@2.5.9(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fbUeEqlTqst0z7DUDvZ5CkQTQ6jXsoP6w144Qh559OryL/DlusXNtIPU3iQPmS37zHthv/RVo1YKp/dislNklw==}
     peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
-      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
     dependencies:
-      classnames: 2.3.2
+      '@types/youtube-player': 5.5.11
+      classnames: 2.5.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-sub-unsub: 2.1.11(react-dom@18.2.0)(react@18.2.0)
+      react-html-props: 2.0.9(react-dom@18.2.0)(react@18.2.0)
+      react-sub-unsub: 2.2.7(react-dom@18.2.0)(react@18.2.0)
       react-twitter-embed: 4.0.4(react-dom@18.2.0)(react@18.2.0)
       react-youtube: 10.1.0(react@18.2.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /react-sub-unsub@2.1.11(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-FNKy0uD5wSieRE+l5RXaS0bUu6cR8XAXLDwOJnvSDGBMHcWVb1dod8ZkXYjPKtKR74tjYCEpMWcEAWCOoWNXxQ==}
+  /react-sub-unsub@2.2.7(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-b2o0mIW8G4Yb3aaKxFB9iiCCHxCDGmogy+493oQpEJHjBy/hl6uf+6RhAinqKWRwi1fvO6mGIMVGsf2XYLL38g==}
     peerDependencies:
-      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
-      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0
+      react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
+      react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
