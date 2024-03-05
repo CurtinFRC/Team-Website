@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@next/font':
-    specifier: 14.1.0
-    version: 14.1.0(next@14.1.2)
+    specifier: 14.1.2
+    version: 14.1.2(next@14.1.2)
   eslint:
     specifier: 8.57.0
     version: 8.57.0
@@ -1391,8 +1391,8 @@ packages:
       glob: 10.3.10
     dev: false
 
-  /@next/font@14.1.0(next@14.1.2):
-    resolution: {integrity: sha512-9hJ7bEYDI7UGQ1a++5zRD3F2VUu9NIaK5Hro/uL9bvFFs6b0Cy1OdLtLQHCIQE7sSMt8Rbu4VtcbnlubsseelA==}
+  /@next/font@14.1.2(next@14.1.2):
+    resolution: {integrity: sha512-1MWfdC0EiHCuC9U9vRAYd96fA3vW9/fW/CkNGy8Ol1QrSfSRLft5i0g+xLEPsuo+BSJKqU03JkA2LEE1LdNv6w==}
     peerDependencies:
       next: '*'
     dependencies:
