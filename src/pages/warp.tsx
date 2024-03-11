@@ -42,22 +42,15 @@ export default function Home() {
       </Head>
       <div className='page'>
         <div className='hero-no-padding'>
-          <div className='column'>
-            <Image
-              className='logo'
-              src='/warp-logo.png'
-              alt='warp logo'
-              width={w}
-              height={h}
-            />
-            {/* <Logo className="logo" /> */}
+          <div className="column">
+            <Image className="logo" id='logo-filter' src="/warp-logo.png" alt="warp logo" width={w} height={h}/>
             <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Warp</h1>
             </Marquee>
             <Arrows className='arrows' />
           </div>
         </div>
-        
+
         <div className='heros'>
           {/* <Link href='https://www.facebook.com/CurtinFrc/'>
             <h2>Curtin's Facebook</h2>
