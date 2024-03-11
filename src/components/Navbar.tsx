@@ -1,18 +1,19 @@
 import React from 'react'
 import Link from 'next/link'
+import { LinkArrow } from './Icons'
 import { Slant as Hamburger } from 'hamburger-react'
 import { TRUE } from 'sass';
 
 const navbarData = {
   pages: [
     {
+      title: 'Home',
+      url: '/',
+    },
+    {
       title: 'Robots',
       url: '/robots',
     },
-      {
-      title: 'Socials',
-      url: '/socials',
-    }, 
     {
       title: 'Sponsors',
       url: '/sponsors',
@@ -21,10 +22,6 @@ const navbarData = {
      title: 'Outreach',
      url: '/outreach'
    },
-    {
-      title: 'Warp',
-      url: '/warp',
-    },
   ],
 }
 
@@ -32,11 +29,13 @@ export default class Navbar extends React.Component {
   navRef;
   logoRef;
   pagesRef;
+  arrowRef;
   constructor(props) {
     super(props)
     this.navRef = React.createRef()
     this.logoRef = React.createRef()
     this.pagesRef = React.createRef()
+    this.arrowRef = React.createRef()
     this.state = {
       setOpen: false,
       showDropdown: false,
@@ -134,6 +133,9 @@ export default class Navbar extends React.Component {
           <Link href="https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR" className='button'>
             Join
           </Link>
+          <div ref={this.arrowRef}>
+            <LinkArrow className='LinkArrow'/>
+          </div>
         </div>
           
         <div hidden={true}>

@@ -14,11 +14,15 @@ export default function Home() {
       <div className="page">
         <div className='hero-no-padding'>
           <div className="column">
-            <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
+            <Marquee speed={25} gradient={false} style={{ opacity: 1.00 }}>
               <h1>Robots</h1>
             </Marquee>
-            <Image src="/5663_2019.jpg" alt="Our 2019 robot KillSwitch" width={600} height={336}/>
-            <h3>Our 2019 robot Killswitch:</h3>
+          
+            <h3>Our 2024 Robot: Notedog Millionare</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
             <p>
                   Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
 		              <br/>
@@ -27,19 +31,133 @@ export default function Home() {
                   <br/>
                   South Pacific Regional - Lost in Semi Finals
             </p>
-            <h3>Our 2020 robot Overkill:</h3>
+         
+          </div>
+          <h3>Our 2023 Robot: Whiplash</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
             <p>
-              content content Content
-              <br/>
-              <br/>
-              Competed at:
-              <br/>
-              Content content content
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
             </p>
+         
+          </div>
+          <h3>Our 2022 Robot: Puddle</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2021 Robot: West Coast Slinger</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2020 Robot: Overkill</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/5663_2019.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2019 Robot: Killswitch</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/5663_2019.jpg" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2018 Robot: Overkill</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2017 Robot: Overkill</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
+          <h3>Our 2016 Robot: Overkill</h3>
+          <div className='robot-info-left'>
+            <Image className="img"src="/robot_placeholder.png" alt="Our 2019 robot KillSwitch" width={1300} height={772}/>
+            
+            <br/>
+            <p>
+                  Designed to be capable of scoring cargo quickly with a small hatch panel &apos;flooper&apos; this robot has been described as a cargo beast
+		              <br/>
+                  <br/>
+                  Competed at:
+                  <br/>
+                  South Pacific Regional - Lost in Semi Finals
+            </p>
+         
+          </div>
           </div>
         </div>
 
       </div>
+
     </>
   )
 }

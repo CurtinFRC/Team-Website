@@ -40,7 +40,7 @@ export default function Home() {
       <div className="page">
         <div className='hero-no-padding'>
           <div className="column">
-            <Image className="logo" src="/warp-logo.png" alt="warp logo" width={w} height={h}/>
+            <Image className="logo" id='logo-filter' src="/warp-logo.png" alt="warp logo" width={w} height={h}/>
             {/* <Logo className="logo" /> */}
             <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
               <h1>Warp</h1>

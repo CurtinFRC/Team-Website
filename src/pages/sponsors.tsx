@@ -14,16 +14,17 @@ export default function Home() {
 
       <div className="page">
         <div className='hero'>
-          <Marquee speed={25} gradient={false} direction='left' style={{ opacity: 0.80 }}>
+          <Marquee speed={25} gradient={false} direction='left' style={{ opacity: 1 }}>
             <h1>Sponsors</h1>
           </Marquee>
 
-          <div className="column">
+          <div className="column" id="diamond-sponsors">
             <SponsorCategory title="Diamond Sponsors">
               <img src='/tmp/Curtin.png' alt='Curtin University' height={100.5} width={575} />
               <p>Curtin University, formerly known as Curtin University of Technology and Western Australian Institute of Technology, is an Australian public research university based in Bentley, Perth, Western Australia.</p>
             </SponsorCategory>
-
+          </div>
+          <div className="column" id="gold-sponsors">
             <SponsorCategory title="Gold Sponsors">
               <img src='pathways.png' alt='Pathways' height={200} width={600} />
               <p>Defence Australia is a department of the Government of Australia charged with the responsibility to defend Australia and its national interests.</p>
@@ -32,9 +33,10 @@ export default function Home() {
               <img src='tengineer.png' alt='turner engineering' height={100} width={300} />
               <p>Wholesaler household appliances in Bibra Lake, Western Australia</p>
             </SponsorCategory>
-
+          </div>
+          <div className="column" id="silver-sponsors">
             <SponsorCategory title="Silver Sponsors">
-              <img src='/tmp/Altronics.png' alt='altronics' height={100} width={300} />
+              <img src='/tmp/Altronics.png' alt='altronics' height={100} width={400} />
               <p>Altronics is a fully Australian owned and operated company that supplies electronic components and finished goods to customers throughout Australia and around the world.</p>
               {/* <Sponsor image='baesystems.svg' alt='BAE Systems' height={100} width={300} /> */}
               <img src='rockwell.svg' alt='rockwell automation' height={100} width={300} />
@@ -46,14 +48,16 @@ export default function Home() {
 The Australian Arab Association of WA operates as a non-profit, non-political, and non-religious organization. Our primary objective is to offer support to Culturally and Linguistically Diverse (CaLd) communities in Australia.</p>
               {/* <p>pantry for its unlimited supply of chips</p> */}
             </SponsorCategory>
-            <SponsorCategory title="Bronze Sponsers">
+          </div>
+          <div id='bronze-sponsors' className="column">
+            <SponsorCategory title="Bronze Sponsors">
               <img src='noctus.svg' alt='noctus' height={90} width={300}/>
               <p>Noctus 3D design, source and manufacture a wide range of affordable High-performance 3D Printer parts and kits, with a particular focus on speed-printing and Voron machines.</p>
             </SponsorCategory>
           </div>
+          </div>
         </div>
         <div className='heros'></div>
-      </div>
     </>
   );
 }
