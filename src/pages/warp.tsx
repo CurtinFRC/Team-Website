@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { Arrows, Logo } from '../components/Icons'
-import Marquee from 'react-fast-marquee'
-import Link from 'next/link'
-import Image from 'next/image'
+import Head from 'next/head';
+import { Arrows, Logo } from '../components/Icons';
+import Marquee from 'react-fast-marquee';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   var w = 1397;
@@ -11,17 +11,26 @@ export default function Home() {
     <>
       <Head>
         <title>WARP | 4788</title>
-        <meta name="description" content="WARP Curtin FRC's offseason competition" />
+        <meta
+          name='description'
+          content="WARP Curtin FRC's offseason competition"
+        />
       </Head>
-      <div className="page">
+      <div className='page'>
         <div className='hero-no-padding'>
-          <div className="column">
-            <Image className="logo" src="/warp-logo.png" alt="warp logo" width={w} height={h}/>
+          <div className='column'>
+            <Image
+              className='logo'
+              src='/warp-logo.png'
+              alt='warp logo'
+              width={w}
+              height={h}
+            />
             {/* <Logo className="logo" /> */}
-            <Marquee speed={25} gradient={false} style={{ opacity: 0.80 }}>
+            <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Warp</h1>
             </Marquee>
-            <Arrows className="arrows" />
+            <Arrows className='arrows' />
           </div>
         </div>
         <div className='heros'>
@@ -44,5 +53,5 @@ export default function Home() {
         </div>
       </div>
     </>
-  )
+  );
 }

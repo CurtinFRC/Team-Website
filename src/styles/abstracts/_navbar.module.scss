@@ -3,7 +3,8 @@ $navbar-position: Fixed;
 $navbar-flex-direction: row;
 $navbar-justify-content: space-between;
 $navbar-padding: 0rem 4px;
-$navbar-padding-safe: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+$navbar-padding-safe: env(safe-area-inset-top) env(safe-area-inset-right)
+  env(safe-area-inset-bottom) env(safe-area-inset-left);
 $navbar-width: 100%;
 $navbar-height: 80px;
 
@@ -18,5 +19,5 @@ $navbar-icon-padding: 0rem 0.5rem;
 
 /* Mobile */
 $navbar-justify-content-mobile: space-evenly;
-$navbar-height-mobile: $navbar-height+50px;
+$navbar-height-mobile: $navbar-height + 50px;
 $navbar-flex-direction-mobile: column;

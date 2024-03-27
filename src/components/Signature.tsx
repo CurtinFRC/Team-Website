@@ -1,8 +1,8 @@
-import HTMLComment from "react-html-comment";
-import React from "react";
+import HTMLComment from 'react-html-comment';
+import React from 'react';
 
 const str =
-  "-\n\
+  '-\n\
                                                                       \n\
                       :                             ..                \n\
 :     .:                     :.        -            ..           .:   \n\
@@ -19,7 +19,7 @@ const str =
 .:-:  -                     .-*%#=------::.                    -=     \n\
 .  -:                            .:::..:::-+++==-: .               .: \n\
                                                .:..: -:               \n\
--";
+-';
 
 export default class Signature extends React.Component {
   render() {

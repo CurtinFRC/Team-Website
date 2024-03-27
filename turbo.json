@@ -6,6 +6,7 @@
     },
     "lint": {},
     "dev": {},
-    "start": {}
+    "start": {},
+    "format": {}
   }
 }

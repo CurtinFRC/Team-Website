@@ -1,6 +1,6 @@
-@use './abstracts/index.module'as var;
-@use './components/index.module'as com;
-@use './pages/index.module'as pag;
+@use './abstracts/index.module' as var;
+@use './components/index.module' as com;
+@use './pages/index.module' as pag;
 
 :root {
   --color-foreground: #ec008c;
@@ -23,8 +23,8 @@ h3,
 p {
   a {
     text-decoration: underline;
-    text-decoration-color: #4285F4;
-    color: #4285F4;
+    text-decoration-color: #4285f4;
+    color: #4285f4;
   }
 }
 

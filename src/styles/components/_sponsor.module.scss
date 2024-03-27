@@ -1,4 +1,4 @@
-@use '../abstracts/index.module'as var;
+@use '../abstracts/index.module' as var;
 
 .sponsor {
   h2,
@@ -41,7 +41,6 @@
   }
 
   @media screen and (max-width: 700px) {
-
     .row,
     .reverse {
       flex-direction: column-reverse;
@@ -53,7 +52,6 @@
     }
 
     .reverse {
-
       h2,
       p {
         text-align: center;

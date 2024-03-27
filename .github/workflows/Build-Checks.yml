@@ -2,55 +2,67 @@ name: Build-Checks
 
 on:
   push:
-    branches: [ "*" ]
+    branches: ['*']
   pull_request:
-    branches: [ "master" ]
+    branches: ['master']
 
 jobs:
-  Ubuntu-Build:
-
+  format:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: pnpm/action-setup@v2.4.0
-      with:
-        version: latest
-    - name: Install Turbo
-      run: npm install turbo -g
-    - name: Install
-      run: pnpm install
-    - name: Build and Lint
-      run: turbo build lint
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: Install
+        run: pnpm install
+      - name: Install Turbo
+        run: npm install turbo -g
+      - name: Check
+        run: pnpm format
+
+  Ubuntu-Build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: Install Turbo
+        run: npm install turbo -g
+      - name: Install
+        run: pnpm install
+      - name: Build and Lint
+        run: turbo build lint
 
   Windows-Build:
-
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: pnpm/action-setup@v2.4.0
-      with:
-        version: latest
-    - name: Install Turbo
-      run: npm install turbo -g
-    - name: Install
-      run: pnpm install
-    - name: Build and Lint
-      run: turbo build lint
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: Install Turbo
+        run: npm install turbo -g
+      - name: Install
+        run: pnpm install
+      - name: Build and Lint
+        run: turbo build lint
 
   MacOS-Build:
-
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: pnpm/action-setup@v2.4.0
-      with:
-        version: latest
-    - name: Install Turbo
-      run: npm install turbo -g
-    - name: Install
-      run: pnpm install
-    - name: Build and Lint
-      run: turbo build lint
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: Install Turbo
+        run: npm install turbo -g
+      - name: Install
+        run: pnpm install
+      - name: Build and Lint
+        run: turbo build lint

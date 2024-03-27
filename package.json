@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -27,6 +29,8 @@
   },
   "devDependencies": {
     "@types/react": "18.2.72",
-    "typescript": "5.4.3"
+    "typescript": "5.4.3",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5"
   }
 }
