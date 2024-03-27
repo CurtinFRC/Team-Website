@@ -1,4 +1,4 @@
-@use '../abstracts/index.module'as var;
+@use '../abstracts/index.module' as var;
 
 .navbar {
   display: flex;
@@ -9,7 +9,11 @@
   justify-content: var.$navbar-justify-content;
   z-index: 5;
   background: rgba(0, 0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var.$color-background 55%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    var.$color-background 55%
+  );
   padding: var.$navbar-padding;
   padding: var.$padding-safe;
   width: var.$navbar-width;
@@ -44,7 +48,10 @@
     height: calc(100vh - var.$navbar-height);
     color: var.$color-foreground;
     transform-origin: top;
-    transition: transform 0.25s, opacity 0.25s, background-color 0.25s;
+    transition:
+      transform 0.25s,
+      opacity 0.25s,
+      background-color 0.25s;
 
     .button {
       margin: 25px 0px;

@@ -1,5 +1,5 @@
-# Team 4788, Can't Control's Team Website 
+# Team 4788, Can't Control's Team Website
 
-## Contributing 
+## Contributing
 
-Look in at contributing in .github to get started! 
+Look in at contributing in .github to get started!

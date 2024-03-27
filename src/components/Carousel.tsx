@@ -6,8 +6,10 @@ const Carousel = ({ elements }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentElement(currentElement => (currentElement + 1) % elements.length);
-      setTranslateValue(translateValue => translateValue - 100);
+      setCurrentElement(
+        (currentElement) => (currentElement + 1) % elements.length
+      );
+      setTranslateValue((translateValue) => translateValue - 100);
     }, 3000);
 
     return () => clearInterval(interval);
@@ -20,7 +22,7 @@ const Carousel = ({ elements }) => {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          transform: `translateY(${translateValue}%)`
+          transform: `translateY(${translateValue}%)`,
         }}
       >
         {elements.map((element, index) => {
