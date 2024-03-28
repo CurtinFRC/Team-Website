@@ -38,3 +38,12 @@ yarn-error.log*
 /.vscode
 /.idea
 
+
+#pwa files
+/public/sw.js
+/public/sw.js.map
+
+/public/sw.js
+/public/sw.js.map
+/public/workbox-*.js
+/public/workbox-*.js.map
