@@ -40,8 +40,8 @@ jobs:
         run: pnpm install
       - name: Install Turbo
         run: npm install turbo -g
-      - name: Check
-        run: pnpm format
+      - name: Format
+        run: turbo format:fix
       - name: Commit
         run: |
           # Set credentials
