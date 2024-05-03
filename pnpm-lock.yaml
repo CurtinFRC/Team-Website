@@ -42,8 +42,8 @@ dependencies:
     specifier: ^5.0.1
     version: 5.0.1(react@18.2.0)
   react-social-media-embed:
-    specifier: ^2.5.9
-    version: 2.5.9(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.5.13
+    version: 2.5.13(react-dom@18.2.0)(react@18.2.0)
   react-useanimations:
     specifier: ^2.10.0
     version: 2.10.0(react-dom@18.2.0)(react@18.2.0)
@@ -4345,8 +4345,8 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
-  /react-social-media-embed@2.5.9(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-fbUeEqlTqst0z7DUDvZ5CkQTQ6jXsoP6w144Qh559OryL/DlusXNtIPU3iQPmS37zHthv/RVo1YKp/dislNklw==}
+  /react-social-media-embed@2.5.13(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-9udbyUZpG8lXhDzDHH6ceDZfhW7QGg2WoVjJD6F8PTOXJoULZTkvLV7vYpqeWthqP33iwagLEHo7goJVDuL7ug==}
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0
