@@ -22,7 +22,7 @@ dependencies:
     version: 4.0.0
   next:
     specifier: 14.1.4
-    version: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0)
+    version: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.77.1)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.24.0)(next@14.1.4)(webpack@5.90.3)
@@ -48,8 +48,8 @@ dependencies:
     specifier: ^2.10.0
     version: 2.10.0(react-dom@18.2.0)(react@18.2.0)
   sass:
-    specifier: ^1.72.0
-    version: 1.72.0
+    specifier: ^1.77.1
+    version: 1.77.1
 
 devDependencies:
   '@types/react':
@@ -1385,7 +1385,7 @@ packages:
     peerDependencies:
       next: '*'
     dependencies:
-      next: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0)
+      next: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.77.1)
     dev: false
 
   /@next/swc-darwin-arm64@14.1.4:
@@ -3925,7 +3925,7 @@ packages:
       babel-loader: 8.3.0(@babel/core@7.24.0)(webpack@5.90.3)
       clean-webpack-plugin: 4.0.0(webpack@5.90.3)
       globby: 11.1.0
-      next: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0)
+      next: 14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.77.1)
       terser-webpack-plugin: 5.3.10(webpack@5.90.3)
       workbox-webpack-plugin: 6.6.0(webpack@5.90.3)
       workbox-window: 6.6.0
@@ -3939,7 +3939,7 @@ packages:
       - webpack
     dev: false
 
-  /next@14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.72.0):
+  /next@14.1.4(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.77.1):
     resolution: {integrity: sha512-1WTaXeSrUwlz/XcnhGTY7+8eiaFvdet5z9u3V2jb+Ek1vFo0VhHKSAIJvDWfQpttWjnyw14kBeq28TPq7bTeEQ==}
     engines: {node: '>=18.17.0'}
     hasBin: true
@@ -3962,7 +3962,7 @@ packages:
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.72.0
+      sass: 1.77.1
       styled-jsx: 5.1.1(@babel/core@7.24.0)(react@18.2.0)
     optionalDependencies:
       '@next/swc-darwin-arm64': 14.1.4
@@ -4593,8 +4593,8 @@ packages:
       is-regex: 1.1.4
     dev: false
 
-  /sass@1.72.0:
-    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
+  /sass@1.77.1:
+    resolution: {integrity: sha512-OMEyfirt9XEfyvocduUIOlUSkWOXS/LAt6oblR/ISXCTukyavjex+zQNm51pPCOiFKY1QpWvEH1EeCkgyV3I6w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
