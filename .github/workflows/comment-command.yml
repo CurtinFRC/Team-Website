@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.COMMENT_COMMAND_PAT_TOKEN }}
       - name: Fetch all history and metadata
         run: |
           git checkout -b pr
@@ -31,7 +31,7 @@ jobs:
         run: |
           gh pr checkout $NUMBER
         env:
-          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_TOKEN: '${{ secrets.COMMENT_COMMAND_PAT_TOKEN }}'
           NUMBER: ${{ github.event.issue.number }}
       - uses: pnpm/action-setup@v2.4.0
         with:
