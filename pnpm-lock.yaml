@@ -8,8 +8,8 @@ importers:
   .:
     dependencies:
       '@next/font':
-        specifier: 14.1.4
-        version: 14.1.4(next@14.1.4)
+        specifier: 14.2.3
+        version: 14.2.3(next@14.1.4)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -1091,10 +1091,10 @@ packages:
         integrity: sha512-n4zYNLSyCo0Ln5b7qxqQeQ34OZKXwgbdcx6kmkQbywr+0k6M3Vinft0T72R6CDAcDrne2IAgSud4uWCzFgc5HA==,
       }
 
-  '@next/font@14.1.4':
+  '@next/font@14.2.3':
     resolution:
       {
-        integrity: sha512-a7CnpjEA3zXsKpCB7JX92mNiDYvjDImLfRjK+szi/q64vwbNrrs54up2xgFE1T4K1OE8GaI/eQ3zrZFWIbOJ1Q==,
+        integrity: sha512-u35UstQmvl3Yrvv2MOi6RcXMH3xDtmWTXcvkYcC/vCZHLqj/5JQ5UyFRf5saDWxFlZIkEh8HCzwNGoiHIr1/NQ==,
       }
     peerDependencies:
       next: '*'
@@ -5848,7 +5848,7 @@ snapshots:
     dependencies:
       glob: 10.3.10
 
-  '@next/font@14.1.4(next@14.1.4)':
+  '@next/font@14.2.3(next@14.1.4)':
     dependencies:
       next: 14.1.4(@babel/core@7.24.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.77.2)
 
