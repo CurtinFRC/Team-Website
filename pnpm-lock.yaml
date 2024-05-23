@@ -44,7 +44,7 @@ importers:
         specifier: ^5.0.1
         version: 5.2.1(react@18.2.0)
       react-social-media-embed:
-        specifier: ^2.5.9
+        specifier: ^2.5.13
         version: 2.5.13(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-useanimations:
         specifier: ^2.10.0
