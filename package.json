@@ -2,6 +2,7 @@
   "name": "4788",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm",
   "scripts": {
     "format": "prettier --check --ignore-path .gitignore .",
     "format:fix": "prettier --write --ignore-path .gitignore .",
