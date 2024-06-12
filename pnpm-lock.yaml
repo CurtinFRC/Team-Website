@@ -60,8 +60,8 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.0)
       prettier:
-        specifier: ^3.3.0
-        version: 3.3.0
+        specifier: ^3.3.2
+        version: 3.3.2
       turbo:
         specifier: ^2.0.3
         version: 2.0.3
@@ -3910,10 +3910,10 @@ packages:
       }
     engines: { node: '>= 0.8.0' }
 
-  prettier@3.3.0:
+  prettier@3.3.2:
     resolution:
       {
-        integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==,
+        integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==,
       }
     engines: { node: '>=14' }
     hasBin: true
@@ -7696,7 +7696,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.3.0: {}
+  prettier@3.3.2: {}
 
   pretty-bytes@5.6.0: {}
 
