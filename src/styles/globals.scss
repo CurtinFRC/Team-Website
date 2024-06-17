@@ -50,20 +50,6 @@ a {
   background: var.$color-background;
 }
 
-.popup {
-  display: none;
-  // position: absolute;
-  position: fixed;
-  bottom: 0; /* or use top: 0; */
-  background-color: #0000009f;
-  padding: 10px;
-  border: 3px solid var.$color-foreground;
-}
-
-.popup.active {
-  display: block;
-}
-
 .row-fixed {
   display: flex;
   flex-direction: row;
