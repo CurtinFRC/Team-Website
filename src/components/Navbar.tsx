@@ -14,10 +14,6 @@ const navbarData = {
       url: '/robots',
     },
     {
-      title: 'Socials',
-      url: '/socials',
-    },
-    {
       title: 'Sponsors',
       url: '/sponsors',
     },

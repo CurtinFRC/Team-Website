@@ -7,24 +7,7 @@ function Footer() {
   // render() {
   return (
     <div className='footer'>
-      <div id='footer-sponsors'>
-        <p>Sponsors!</p>
-        <div className='sponsor-links'>
-          <Link href='/sponsors'>Curtin University</Link>
-          <br />
-          <Link href='/sponsors'>Defence Australa</Link>
-          <br />
-          <Link href='/sponsors'>Altronics</Link>
-          <br />
-        </div>
-      </div>
-      <div id='footer-license'>
-        <Logo id='cool-logo' />
-        <br />
-        <p id='license-text'>MIT License</p>
-
-        <p>&copy; 2024 Can&apos;t Control Curtin FRC Team </p>
-      </div>
+      <p>&copy; 2024 Can&apos;t Control Curtin FRC Team </p>
       <div id='footer-socials'>
         <p>Socials!</p>
         <div className='links'>
