@@ -6,16 +6,16 @@ import { Slant as Hamburger } from 'hamburger-react';
 const navbarData = {
   pages: [
     {
-      title: 'Home',
-      url: '/',
-    },
-    {
       title: 'Robots',
       url: '/robots',
     },
     {
       title: 'Sponsors',
       url: '/sponsors',
+    },
+    {
+      title: 'WARP',
+      url: '/warp',
     },
     {
       title: 'Outreach',

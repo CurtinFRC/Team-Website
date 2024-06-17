@@ -26,7 +26,6 @@
     "react-icons": "^5.0.1",
     "react-social-media-embed": "^2.5.13",
     "react-useanimations": "^2.10.0",
-    "tb-link-preview": "^1.0.3",
     "sass": "^1.77.5"
   },
   "devDependencies": {
