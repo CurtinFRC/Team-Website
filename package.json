@@ -24,8 +24,6 @@
     "react-fast-marquee": "^1.6.4",
     "react-html-comment": "^2.0.16",
     "react-icons": "^5.0.1",
-    "react-social-media-embed": "^2.5.13",
-    "react-useanimations": "^2.10.0",
     "sass": "^1.77.5"
   },
   "devDependencies": {
