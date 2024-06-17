@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Marquee from 'react-fast-marquee';
 import { Arrows } from '../components/Icons';
+import Image from 'next/image';
 
 export default function Outreach() {
   return (
@@ -25,10 +26,11 @@ export default function Outreach() {
         <div className='heros'>
           {/* placeholders */}
           <h4 className='h1-normal'>ROBO ACADEMY</h4>
-          <img
+          <Image
             src='https://s30991.pcdn.co/engage/wp-content/uploads/sites/6/2022/02/Robotics-high-shot-aspect-ratio-2-1.jpg.webp'
-            width='1000'
-            height='600'
+            alt='Robo Academy'
+            width={1000}
+            height={600}
           />
           <p>
             Robot Academy is school holiday workshops for children interested in

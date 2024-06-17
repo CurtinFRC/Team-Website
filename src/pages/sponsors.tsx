@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 export function SponsorCategory({ title, children }) {
@@ -30,7 +31,7 @@ export default function Home() {
 
           <div className='column' id='diamond-sponsors'>
             <SponsorCategory title='Diamond Sponsors'>
-              <img
+              <Image
                 src='/tmp/Curtin.png'
                 alt='Curtin University'
                 height={100.5}
@@ -46,13 +47,18 @@ export default function Home() {
           </div>
           <div className='column' id='gold-sponsors'>
             <SponsorCategory title='Gold Sponsors'>
-              <img src='pathways.png' alt='Pathways' height={200} width={600} />
+              <Image
+                src='pathways.png'
+                alt='Pathways'
+                height={200}
+                width={600}
+              />
               <p>
                 Defence Australia is a department of the Government of Australia
                 charged with the responsibility to defend Australia and its
                 national interests.
               </p>
-              <img
+              <Image
                 src='artifactory.png'
                 alt='artifactory'
                 height={100}
@@ -62,7 +68,7 @@ export default function Home() {
                 The Perth Artifactory is the Hackerspace/Makerspace in Perth,
                 Western Australia.
               </p>
-              <img
+              <Image
                 src='tengineer.png'
                 alt='turner engineering'
                 height={100}
@@ -75,7 +81,7 @@ export default function Home() {
           </div>
           <div className='column' id='silver-sponsors'>
             <SponsorCategory title='Silver Sponsors'>
-              <img
+              <Image
                 src='/tmp/Altronics.png'
                 alt='altronics'
                 height={100}
@@ -86,7 +92,7 @@ export default function Home() {
                 supplies electronic components and finished goods to customers
                 throughout Australia and around the world.
               </p>
-              <img
+              <Image
                 src='rockwell.svg'
                 alt='rockwell automation'
                 height={100}
@@ -96,7 +102,7 @@ export default function Home() {
                 Rockwell Automation, Inc. is an American provider of industrial
                 automation and digital transformation technologies.
               </p>
-              <img
+              <Image
                 src='curry.png'
                 alt='curry curry curry'
                 height={100}
@@ -106,7 +112,7 @@ export default function Home() {
                 Traditional Indian plates served in a mellow locale with a
                 display of grab-&-go snacks & desserts.
               </p>
-              <img
+              <Image
                 src='arabia.webp'
                 alt='arab association'
                 height={163}
@@ -122,7 +128,7 @@ export default function Home() {
           </div>
           <div id='bronze-sponsors' className='column'>
             <SponsorCategory title='Bronze Sponsors'>
-              <img src='noctus.svg' alt='noctus' height={90} width={300} />
+              <Image src='noctus.svg' alt='noctus' height={90} width={300} />
               <p>
                 Noctus 3D design, source and manufacture a wide range of
                 affordable High-performance 3D Printer parts and kits, with a
