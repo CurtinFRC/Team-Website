@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import { LinkArrow } from './Icons'
-import { Slant as Hamburger } from 'hamburger-react'
+import React from 'react';
+import Link from 'next/link';
+import { LinkArrow } from './Icons';
+import { Slant as Hamburger } from 'hamburger-react';
 
 const navbarData = {
   pages: [
@@ -21,10 +21,10 @@ const navbarData = {
       title: 'Sponsors',
       url: '/sponsors',
     },
-   {
-     title: 'Outreach',
-     url: '/outreach'
-   },
+    {
+      title: 'Outreach',
+      url: '/outreach',
+    },
   ],
 };
 
@@ -34,11 +34,11 @@ export default class Navbar extends React.Component {
   pagesRef;
   arrowRef;
   constructor(props) {
-    super(props)
-    this.navRef = React.createRef()
-    this.logoRef = React.createRef()
-    this.pagesRef = React.createRef()
-    this.arrowRef = React.createRef()
+    super(props);
+    this.navRef = React.createRef();
+    this.logoRef = React.createRef();
+    this.pagesRef = React.createRef();
+    this.arrowRef = React.createRef();
     this.state = {
       setOpen: false,
       showDropdown: false,
@@ -164,7 +164,7 @@ export default class Navbar extends React.Component {
             Join
           </Link>
           <div ref={this.arrowRef}>
-            <LinkArrow className='LinkArrow'/>
+            <LinkArrow className='LinkArrow' />
           </div>
         </div>
 

@@ -42,8 +42,15 @@ export default function Home() {
       </Head>
       <div className='page'>
         <div className='hero-no-padding'>
-          <div className="column">
-            <Image className="logo" id='logo-filter' src="/warp-logo.png" alt="warp logo" width={w} height={h}/>
+          <div className='column'>
+            <Image
+              className='logo'
+              id='logo-filter'
+              src='/warp-logo.png'
+              alt='warp logo'
+              width={w}
+              height={h}
+            />
             <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Warp</h1>
             </Marquee>
@@ -59,30 +66,54 @@ export default function Home() {
             <h2 onMouseEnter={showPopup1} onMouseLeave={hidePopup1}> Instagram </h2>
           </Link> */}
           <div id='parent'>
-          <h2><a href='https://www.instagram.com/waroboticsplayoffs/' onMouseEnter={showPopup1} onMouseLeave={hidePopup1}>Instagram</a></h2>
-          <div style={{"marginLeft":"20%"}}className="popup" id="popup1">
-            <p>Bonk</p>
-          </div>
+            <h2>
+              <a
+                href='https://www.instagram.com/waroboticsplayoffs/'
+                onMouseEnter={showPopup1}
+                onMouseLeave={hidePopup1}
+              >
+                Instagram
+              </a>
+            </h2>
+            <div style={{ marginLeft: '20%' }} className='popup' id='popup1'>
+              <p>Bonk</p>
+            </div>
           </div>
           {/* <Link href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'>
             <h2 onMouseEnter={showPopup2} onMouseLeave={hidePopup2}> Facebook </h2>
           </Link> */}
           <div id='parent'>
-          <h2><a href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/' onMouseEnter={showPopup2} onMouseLeave={hidePopup2}>Facebook</a></h2>
-          <div style={{"marginLeft":"20%"}}className="popup" id="popup2">
-            <p>Bang</p>
-          </div>
+            <h2>
+              <a
+                href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'
+                onMouseEnter={showPopup2}
+                onMouseLeave={hidePopup2}
+              >
+                Facebook
+              </a>
+            </h2>
+            <div style={{ marginLeft: '20%' }} className='popup' id='popup2'>
+              <p>Bang</p>
+            </div>
           </div>
           {/* <Link href='https://www.youtube.com/@waroboticsplayoffs'>
             <h2 onMouseEnter={showPopup3} onMouseLeave={hidePopup3}> Youtube </h2>
           </Link> */}
           <div id='parent'>
-          <h2><a href='https://www.youtube.com/@waroboticsplayoffs' onMouseEnter={showPopup3} onMouseLeave={hidePopup3}>Youtube</a></h2>
-          <div style={{"marginLeft":"20%"}}className="popup" id="popup3">
-            <p>Pop</p>
+            <h2>
+              <a
+                href='https://www.youtube.com/@waroboticsplayoffs'
+                onMouseEnter={showPopup3}
+                onMouseLeave={hidePopup3}
+              >
+                Youtube
+              </a>
+            </h2>
+            <div style={{ marginLeft: '20%' }} className='popup' id='popup3'>
+              <p>Pop</p>
+            </div>
           </div>
-          </div>
-          <p style={{marginBottom:"5%"}}></p>
+          <p style={{ marginBottom: '5%' }}></p>
         </div>
       </div>
     </>

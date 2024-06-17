@@ -84,33 +84,82 @@ export default function Home() {
         <title>Socials | 4788</title>
         <meta name='description' content="Curtin FRC's Socials" />
       </Head>
-      <div className="page" id='page'>
-        <div className='hero' style={{ justifyContent: "flex-start"}}>
-          <Marquee speed={25} gradient={false} direction='left' style={{ opacity: 0.80 }}>
+      <div className='page' id='page'>
+        <div className='hero' style={{ justifyContent: 'flex-start' }}>
+          <Marquee
+            speed={25}
+            gradient={false}
+            direction='left'
+            style={{ opacity: 0.8 }}
+          >
             <h1>Socials</h1>
           </Marquee>
-          <div className="column posts">
+          <div className='column posts'>
             <ul>
               <div id='parent'>
-                <li><h3><a href='https://www.facebook.com/Team4788' className="popup-trigger" onMouseEnter={showPopup1} onMouseLeave={hidePopup1}>Our Facebook</a></h3></li>
-                <div style={{"marginLeft":"20%"}}className="popup" id="popup1">
-                  <Facebook url="https://www.facebook.com/photo?fbid=650239157108479&set=a.468333625299034"/>
+                <li>
+                  <h3>
+                    <a
+                      href='https://www.facebook.com/Team4788'
+                      className='popup-trigger'
+                      onMouseEnter={showPopup1}
+                      onMouseLeave={hidePopup1}
+                    >
+                      Our Facebook
+                    </a>
+                  </h3>
+                </li>
+                <div
+                  style={{ marginLeft: '20%' }}
+                  className='popup'
+                  id='popup1'
+                >
+                  <Facebook url='https://www.facebook.com/photo?fbid=650239157108479&set=a.468333625299034' />
                 </div>
               </div>
               <div id='parent'>
-                <li><h3><a href='https://www.instagram.com/frcteam4788/' className="popup-trigger" onMouseEnter={showPopup2} onMouseLeave={hidePopup2}>Our instagram</a></h3></li>
-              <div style={{"marginLeft":"20%"}} className="popup" id="popup2">
-                <Instagram url="https://www.instagram.com/p/Cq5pNEChgbY/?hl=en"/>
-              </div>
+                <li>
+                  <h3>
+                    <a
+                      href='https://www.instagram.com/frcteam4788/'
+                      className='popup-trigger'
+                      onMouseEnter={showPopup2}
+                      onMouseLeave={hidePopup2}
+                    >
+                      Our instagram
+                    </a>
+                  </h3>
+                </li>
+                <div
+                  style={{ marginLeft: '20%' }}
+                  className='popup'
+                  id='popup2'
+                >
+                  <Instagram url='https://www.instagram.com/p/Cq5pNEChgbY/?hl=en' />
+                </div>
               </div>
               <div id='parent'>
-
-              <li><h3><a href='https://www.youtube.com/@CurtinFRC4788CantControl' className="popup-trigger" onMouseEnter={showPopup3} onMouseLeave={hidePopup3}>Our Youtube</a></h3></li>
-              <div style={{"marginLeft":"20%"}} className="popup" id="popup3">
-                <Youtube url="https://www.youtube.com/watch?v=UvU8SDmH-LA"/>
+                <li>
+                  <h3>
+                    <a
+                      href='https://www.youtube.com/@CurtinFRC4788CantControl'
+                      className='popup-trigger'
+                      onMouseEnter={showPopup3}
+                      onMouseLeave={hidePopup3}
+                    >
+                      Our Youtube
+                    </a>
+                  </h3>
+                </li>
+                <div
+                  style={{ marginLeft: '20%' }}
+                  className='popup'
+                  id='popup3'
+                >
+                  <Youtube url='https://www.youtube.com/watch?v=UvU8SDmH-LA' />
+                </div>
               </div>
-              </div>
-              <p style={{"marginBottom":"0%"}}/>
+              <p style={{ marginBottom: '0%' }} />
             </ul>
           </div>
         </div>
