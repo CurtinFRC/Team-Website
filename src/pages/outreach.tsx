@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Marquee from 'react-fast-marquee';
-import { Logo, Arrows } from '../components/Icons';
+import { Arrows } from '../components/Icons';
 
 export default function Outreach() {
-  var warpImage = { src: '/warp-logo.png', h: 1397 * 0.25, w: 1468 * 0.25 };
-  var roboAcademyImage = { src: '/', h: 0, w: 0 };
   return (
     <>
       <Head>
@@ -17,7 +15,7 @@ export default function Outreach() {
       <div className='page'>
         <div className='hero-no-padding'>
           <div className='column'>
-            <Marquee speed={25} gradient={false} style={{ opacity: 1 }}>
+            <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Outreach</h1>
             </Marquee>
             <Arrows className='arrows' />

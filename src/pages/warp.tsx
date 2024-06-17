@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Arrows, Logo } from '../components/Icons';
+import { Arrows } from '../components/Icons';
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
 import Link from 'next/link';

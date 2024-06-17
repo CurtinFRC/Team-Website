@@ -1,8 +1,14 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Arrows, Logo } from '../components/Icons';
 import Marquee from 'react-fast-marquee';
-import Sponsor from '../components/Sponsor';
+
+export function SponsorCategory({ title, children }) {
+  return (
+    <>
+      <h2>{title}</h2>
+      {children}
+    </>
+  );
+}
 
 export default function Home() {
   return (
@@ -80,7 +86,6 @@ export default function Home() {
                 supplies electronic components and finished goods to customers
                 throughout Australia and around the world.
               </p>
-              {/* <Sponsor image='baesystems.svg' alt='BAE Systems' height={100} width={300} /> */}
               <img
                 src='rockwell.svg'
                 alt='rockwell automation'
@@ -113,7 +118,6 @@ export default function Home() {
                 objective is to offer support to Culturally and Linguistically
                 Diverse (CaLd) communities in Australia.
               </p>
-              {/* <p>pantry for its unlimited supply of chips</p> */}
             </SponsorCategory>
           </div>
           <div id='bronze-sponsors' className='column'>
@@ -129,15 +133,6 @@ export default function Home() {
         </div>
       </div>
       <div className='heros'></div>
-    </>
-  );
-}
-
-function SponsorCategory({ title, children }) {
-  return (
-    <>
-      <h2>{title}</h2>
-      {children}
     </>
   );
 }
