@@ -48,7 +48,7 @@ export default function Home() {
           <div className='column' id='gold-sponsors'>
             <SponsorCategory title='Gold Sponsors'>
               <Image
-                src='pathways.png'
+                src='/pathways.png'
                 alt='Pathways'
                 height={200}
                 width={600}
@@ -59,7 +59,7 @@ export default function Home() {
                 national interests.
               </p>
               <Image
-                src='artifactory.png'
+                src='/Artifactory.png'
                 alt='artifactory'
                 height={100}
                 width={300}
@@ -69,7 +69,7 @@ export default function Home() {
                 Western Australia.
               </p>
               <Image
-                src='tengineer.png'
+                src='/tengineer.png'
                 alt='turner engineering'
                 height={100}
                 width={300}
@@ -103,7 +103,7 @@ export default function Home() {
                 automation and digital transformation technologies.
               </p>
               <Image
-                src='curry.png'
+                src='/curry.png'
                 alt='curry curry curry'
                 height={100}
                 width={300}
@@ -113,7 +113,7 @@ export default function Home() {
                 display of grab-&-go snacks & desserts.
               </p>
               <Image
-                src='arabia.webp'
+                src='/arabia.webp'
                 alt='arab association'
                 height={163}
                 width={170}
