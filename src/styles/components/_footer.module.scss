@@ -1,11 +1,25 @@
 @use '../abstracts/index.module' as var;
 
 .footer {
-  display: flex;
-  padding-left: 0.5em;
+  padding: 1em; /* Adjust padding as needed */
+  background: linear-gradient(0deg, #272727 1%, var.$color-background 100%);
+  font-family: var.$font-title;
+  color: var.$color-foreground;
   overflow-wrap: normal;
   overflow: auto;
-  background: linear-gradient(0deg, #272727 1%, var.$color-background 100%);
-  color: var.$color-foreground;
-  font-family: var.$font-title;
+  width: 100%;
+}
+
+.footer .license {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .icons {
+  display: flex;
+  justify-content: flex-end; /* Align items from right to left */
+}
+
+.footer .icons .icon {
+  margin-right: 0.5em; /* Adjust spacing between icons */
 }
