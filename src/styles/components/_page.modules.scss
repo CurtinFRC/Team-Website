@@ -3,6 +3,9 @@
 .page {
   position: inherit;
   z-index: 1;
+  width: auto;
+  height: auto;
+  padding-bottom: 100px;
 
   h1 {
     text-align: var.$heading-alignment;
@@ -30,6 +33,16 @@
   h3 {
     @extend h2;
     color: var.$color-body-text;
+    font-size: 10vh;
+    filter: drop-shadow(0px 0px 9px var.$color-foreground);
+  }
+
+  h4 {
+    margin: 1%;
+    color: var.$color-foreground;
+    font-weight: 40px;
+    font-family: var.$font-title;
+    font-size: 80px;
   }
 
   p {
@@ -41,6 +54,9 @@
     font-size: var.$body-size;
   }
 
+  #glow-effect {
+    filter: drop-shadow(0px 0px 15px var.$color-foreground);
+  }
   .marquee {
     overflow: visible;
 
@@ -89,9 +105,80 @@
     vertical-align: middle;
   }
 
+  #logo-filter {
+    filter: drop-shadow(0px 0px 10px var.$color-foreground);
+  }
+
   .logo {
+    padding: 10%;
     color: var.$color-foreground;
     position: absolute;
+    height: 80em;
+    max-height: 80vh;
+    width: auto;
+    z-index: 3;
+  }
+
+  .robot-info-left {
+    //margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    p {
+      text-align: left;
+      float: right;
+      padding: 2%;
+    }
+
+    h3 {
+      color: var.$color-foreground;
+      padding-top: 12%;
+      font-size: 100%;
+    }
+
+    img {
+      float: left;
+      margin: 50px;
+      margin-top: 0%;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0px 0px 15px var.$color-foreground);
+      transition: filter 0.5s;
+      border-radius: 2%;
+    }
+
+    img:hover {
+      filter: drop-shadow(0px 0px 25px var.$color-foreground);
+    }
+
+    h3 {
+      color: var.$color-foreground;
+    }
+
+    img {
+      float: right;
+      margin: 50px;
+      margin-top: 0%;
+      width: 50%;
+      height: auto;
+    }
+  }
+  #logo-effect {
+    height: 800px;
+    width: 900px;
+    z-index: 2;
+    background: radial-gradient(
+      circle,
+      var.$color-background 30%,
+      #00000000 69%
+    );
+    visibility: visible;
+  }
+
+  .logo-normal {
+    color: var.$color-foreground;
     height: 20em;
     max-height: 40vh;
     width: auto;
@@ -99,7 +186,7 @@
     background: radial-gradient(
       circle,
       var.$color-background -40%,
-      rgba(0, 0, 0, 0) 68%
+      #00000000 68%
     );
     filter: drop-shadow(0px 0px 5px var.$color-foreground);
   }
@@ -133,28 +220,65 @@
     font-size: 16px;
   }
 
+  .image {
+    filter: drop-shadow(0px 0px 5px var.$color-foreground);
+    border-radius: 3%;
+  }
   .item {
     flex: 0 1 auto;
     margin: 20px;
   }
 
-  @media screen and (max-width: 700px) {
-    .marquee {
-      h2 {
-        text-shadow: unset;
-      }
-    }
+  #diamond-sponsors {
+    background-color: var.$color-background;
+    border-radius: 2%/6%;
+    filter: drop-shadow(0px 0px 20px #4f4fe1);
+    width: 80%;
+    border: 2px;
+    margin: 4%;
+  }
+  #gold-sponsors {
+    background-color: var.$color-background;
+    border-radius: 2%/3.8%;
+    filter: drop-shadow(0px 0px 20px gold);
+    width: 80%;
+    border: 2px;
+    margin: 4%;
+  }
+  #silver-sponsors {
+    background-color: var.$color-background;
+    border-radius: 4%/5%;
+    filter: drop-shadow(0px 0px 20px silver);
+    width: 80%;
+    border: 2px;
+    margin: 4%;
+  }
+  #bronze-sponsors {
+    background-color: var.$color-background;
+    border-radius: 2%/6%;
+    filter: drop-shadow(0px 0px 20px #cd7f32);
+    width: 80%;
+    border: 2px;
+    margin: 4%;
+  }
+}
 
-    .logo {
-      height: 15em;
-    }
-
-    h1 {
-      font-size: var.$heading-size-mobile;
-    }
-
+@media screen and (max-width: 700px) {
+  .marquee {
     h2 {
-      font-size: var.$title-size - 10;
+      text-shadow: unset;
     }
+  }
+
+  .logo {
+    height: 15em;
+  }
+
+  h1 {
+    font-size: var.$heading-size-mobile;
+  }
+
+  h2 {
+    font-size: var.$title-size - 10;
   }
 }

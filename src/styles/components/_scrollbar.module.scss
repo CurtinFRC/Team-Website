@@ -1,10 +1,13 @@
 @use '../abstracts/index.module' as var;
 
 html::-webkit-scrollbar {
-  width: 7.5px;
+  width: 6px; //7.5
+  z-index: 9999;
 }
 
 html::-webkit-scrollbar-thumb {
+  opacity: 0.5;
+  border-radius: 10px;
   background: var.$color-foreground;
 }
 
