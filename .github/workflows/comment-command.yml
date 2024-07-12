@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: '${{ secrets.COMMENT_COMMAND_PAT_TOKEN }}'
           NUMBER: ${{ github.event.issue.number }}
-      - uses: pnpm/action-setup@v2.4.0
+      - uses: pnpm/action-setup@v3
         with:
           version: latest
       - name: Install
