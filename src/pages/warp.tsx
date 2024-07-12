@@ -57,9 +57,6 @@ export default function Home() {
                 Facebook
               </Link>
             </h2>
-            <div style={{ marginLeft: '20%' }} className='popup' id='popup2'>
-              <p>Bang</p>
-            </div>
           </div>
           <div id='parent'>
             <h2>
