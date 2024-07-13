@@ -21,4 +21,12 @@ module.exports = withPWA({
     defaultLocale: 'en',
   },
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's30991.pcdn.co',
+      },
+    ],
+  },
 });

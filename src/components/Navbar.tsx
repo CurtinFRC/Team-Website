@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { LinkArrow } from './Icons';
 import { Slant as Hamburger } from 'hamburger-react';
 
 const navbarData = {
@@ -9,20 +10,16 @@ const navbarData = {
       url: '/robots',
     },
     {
-      title: 'Socials',
-      url: '/socials',
-    },
-    {
       title: 'Sponsors',
       url: '/sponsors',
     },
-    //    {
-    //      title: 'Outreach',
-    //      url: '/outreach'
-    //    },
     {
-      title: 'Warp',
+      title: 'WARP',
       url: '/warp',
+    },
+    {
+      title: 'Outreach',
+      url: '/outreach',
     },
   ],
 };
@@ -31,11 +28,13 @@ export default class Navbar extends React.Component {
   navRef;
   logoRef;
   pagesRef;
+  arrowRef;
   constructor(props) {
     super(props);
     this.navRef = React.createRef();
     this.logoRef = React.createRef();
     this.pagesRef = React.createRef();
+    this.arrowRef = React.createRef();
     this.state = {
       setOpen: false,
       showDropdown: false,
@@ -160,6 +159,9 @@ export default class Navbar extends React.Component {
           >
             Join
           </Link>
+          <div ref={this.arrowRef}>
+            <LinkArrow className='LinkArrow' />
+          </div>
         </div>
 
         <div hidden={true}>

@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import { Arrows, Logo } from '../components/Icons';
+import { Arrows } from '../components/Icons';
 import Marquee from 'react-fast-marquee';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   var w = 1397;
@@ -21,12 +21,12 @@ export default function Home() {
           <div className='column'>
             <Image
               className='logo'
+              id='logo-filter'
               src='/warp-logo.png'
               alt='warp logo'
               width={w}
               height={h}
             />
-            {/* <Logo className="logo" /> */}
             <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Warp</h1>
             </Marquee>
@@ -34,22 +34,38 @@ export default function Home() {
           </div>
         </div>
         <div className='heros'>
-          {/* <Youtube url='https://www.youtube.com/@waroboticsplayoffs'/> */}
-          {/* <Facebook url='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'/> */}
-          {/* <Instagram url='https://www.instagram.com/p/CulUayTvbrV/?img_index=1'/> */}
-          <h2> WARP Official Social Media</h2>
-          {/* <h2><a href='https://www.instagram.com/waroboticsplayoffs/'> Instagram </a></h2>
-          <h2><a href='https://www.youtube.com/@waroboticsplayoffs'> Youtube </a></h2>
-          <h2><a href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'> Facebook </a></h2> */}
-          <Link href='https://www.instagram.com/waroboticsplayoffs/'>
-            <h2> Instagram </h2>
-          </Link>
-          <Link href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'>
-            <h2> Facebook </h2>
-          </Link>
-          <Link href='https://www.youtube.com/@waroboticsplayoffs'>
-            <h2> Youtube </h2>
-          </Link>
+          <p>
+            Curtin University, Murdoch University and the WA Department of
+            Primary Industries and Regional Development are proud to bring you
+            the WA Robotics Playoffs (WARP). WARP includes an off-season robot
+            competition as part of the global FRC program. Teams are well
+            underway with building their robots ready to compete at Curtin
+            Stadium. Spectators are welcome at this event. Come along and see
+            robot alliances competing for points. Find out how to get a team
+            together for the 2024 competition.
+          </p>
+          <div id='parent'>
+            <h2>
+              <Link href='https://www.instagram.com/waroboticsplayoffs/'>
+                Instagram
+              </Link>
+            </h2>
+          </div>
+          <div id='parent'>
+            <h2>
+              <Link href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'>
+                Facebook
+              </Link>
+            </h2>
+          </div>
+          <div id='parent'>
+            <h2>
+              <Link href='https://www.youtube.com/@waroboticsplayoffs'>
+                Youtube
+              </Link>
+            </h2>
+          </div>
+          <p style={{ marginBottom: '5%' }}></p>
         </div>
       </div>
     </>
