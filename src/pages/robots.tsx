@@ -30,9 +30,9 @@ export default function Home() {
                 After strategy deliberations we came to the conclusion that our
                 best chance of performing well in the South Pacific Regional was
                 to build a robot that focused on cycling the amp scoring
-                mechanism as fast as possible while still scoring speaker to
-                enable us and our alliance partners to score more amplified
-                notes. This robot has been described as a note beast.
+                mechanism as fast as possible while still scoring speaker to and
+                climbing enable us and our alliance partners to score more
+                amplified notes. This robot has been described as a note beast.
                 <br />
                 <br />
                 Competed at:
