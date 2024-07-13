@@ -37,7 +37,8 @@ export default function Home() {
                 <br />
                 Competed at:
                 <br />
-                South Pacific Regional semi finals alliance captain
+                Alliance captain of the 7th alliance at the Southern Cross
+                Regional, eliminated in semi finals.
               </p>
             </div>
 
