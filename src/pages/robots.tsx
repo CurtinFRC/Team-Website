@@ -16,6 +16,32 @@ export default function Home() {
               <h1>Robots</h1>
             </Marquee>
 
+            <h3>Our 2024 Robot: Note Dog Millionare </h3>
+            <div className='robot-info-left'>
+              <Image
+                className='img'
+                src='/NoteDogMillionare.jpg'
+                alt='Our 2024 robot Note Dog Millionare'
+                width={1300}
+                height={772}
+              />
+              <br />
+              <p>
+                After strategy deliberations we came to the conclusion that our
+                best chance of performing well in the South Pacific Regional was
+                to build a robot that focused on cycling the amp scoring
+                mechanism as fast as possible while still scoring speaker to and
+                climbing enable us and our alliance partners to score more
+                amplified notes. This robot has been described as a note beast.
+                <br />
+                <br />
+                Competed at:
+                <br />
+                Alliance captain of the 7th alliance at the Southern Cross
+                Regional, eliminated in semi finals.
+              </p>
+            </div>
+
             <h3>Our 2019 Robot: Killswitch</h3>
             <div className='robot-info-left'>
               <Image
