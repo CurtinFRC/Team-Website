@@ -34,7 +34,7 @@ export default function Home() {
                 <br />
                 Competed at:
                 <br />
-                South Pacific Regional - Lost in Semi Finals
+                South Pacific Regional - Made it to Semi Finals
               </p>
             </div>
           </div>
