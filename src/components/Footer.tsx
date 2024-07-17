@@ -9,16 +9,16 @@ function Footer() {
         <p>&copy; 2024 Curtin FRC</p>
       </div>
       <div className='icons'>
-        <FaGithub size={25} className='icon'>
+        <FaGithub size={35} className='icon'>
           <Link href='https://github.com/CurtinFRC' />
         </FaGithub>
-        <FaFacebook size={25} className='icon'>
+        <FaFacebook size={35} className='icon'>
           <Link href='https://www.facebook.com/CurtinFrc/' />
         </FaFacebook>
-        <FaInstagram size={25} className='icon'>
+        <FaInstagram size={35} className='icon'>
           <Link href='https://www.instagram.com/waroboticsplayoffs/' />
         </FaInstagram>
-        <FaYoutube size={25} className='icon'>
+        <FaYoutube size={35} className='icon'>
           <Link href='https://www.youtube.com/@CurtinFRC4788CantControl' />
         </FaYoutube>
       </div>
