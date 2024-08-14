@@ -7,9 +7,6 @@ settings:
 importers:
   .:
     dependencies:
-      '@next/font':
-        specifier: 14.2.5
-        version: 14.2.5(next@14.2.5(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8))
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -1346,14 +1343,6 @@ packages:
       {
         integrity: sha512-LY3btOpPh+OTIpviNojDpUdIbHW9j0JBYBjsIp8IxtDFfYFyORvw3yNq6N231FVqQA7n7lwaf7xHbVJlA1ED7g==,
       }
-
-  '@next/font@14.2.5':
-    resolution:
-      {
-        integrity: sha512-e2f3M+tAuJPUyXwWtEPKlPfpPEKODiQvPjdxOWBZC+zgdGv18KfjTkEmopfkfpZ016yCvw5BmMPeuEU/uiDf9g==,
-      }
-    peerDependencies:
-      next: '*'
 
   '@next/swc-darwin-arm64@14.2.5':
     resolution:
@@ -5980,10 +5969,6 @@ snapshots:
   '@next/eslint-plugin-next@14.2.5':
     dependencies:
       glob: 10.3.10
-
-  '@next/font@14.2.5(next@14.2.5(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8))':
-    dependencies:
-      next: 14.2.5(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8)
 
   '@next/swc-darwin-arm64@14.2.5':
     optional: true
