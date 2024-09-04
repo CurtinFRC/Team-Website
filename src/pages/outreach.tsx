@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee';
 import { Arrows } from '../components/Icons';
 import Image from 'next/image';
 
-export default function Outreach() {
+const Outreach = () => {
   return (
     <>
       <Head>
@@ -46,4 +46,6 @@ export default function Outreach() {
       </div>
     </>
   );
-}
+};
+
+export default Outreach;

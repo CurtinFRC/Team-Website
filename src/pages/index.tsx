@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Arrows, Logo } from '../components/Icons';
 import Marquee from 'react-fast-marquee';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -52,4 +52,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;

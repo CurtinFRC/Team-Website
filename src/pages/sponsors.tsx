@@ -2,16 +2,16 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-export function SponsorCategory({ title, children }) {
+const SponsorCategory = ({ title, children }) => {
   return (
     <>
       <h2>{title}</h2>
       {children}
     </>
   );
-}
+};
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -141,4 +141,7 @@ export default function Home() {
       <div className='heros'></div>
     </>
   );
-}
+};
+
+export { SponsorCategory };
+export default Home;

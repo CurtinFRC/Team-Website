@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Signature from '../components/Signature';
 import Head from 'next/head';
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <div className='App'>
       <Head>
@@ -56,4 +56,6 @@ export default function App({ Component, pageProps }) {
       </Layout>
     </div>
   );
-}
+};
+
+export default App;
