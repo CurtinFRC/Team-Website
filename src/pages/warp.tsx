@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Home = () => {
+const Warp = () => {
   var w = 1397;
   var h = 1468;
   return (
@@ -72,4 +72,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Warp;

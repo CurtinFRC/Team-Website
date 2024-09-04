@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-const Home = () => {
+const Robots = () => {
   return (
     <>
       <Head>
@@ -70,4 +70,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Robots;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Marquee from 'react-fast-marquee';
 
-const Home = () => {
+const NotFound = () => {
   return (
     <div>
       <Head>
@@ -41,4 +41,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default NotFound;

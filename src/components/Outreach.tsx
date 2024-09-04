@@ -8,7 +8,7 @@ type Props = {
   image: { src: string; w: number; h: number };
 };
 
-const outreach = (props: Props) => {
+const Outreach = (props: Props) => {
   return (
     <div className='content'>
       <h1> {props.title} </h1>
@@ -24,4 +24,4 @@ const outreach = (props: Props) => {
   );
 };
 
-export default outreach;
+export default Outreach;
