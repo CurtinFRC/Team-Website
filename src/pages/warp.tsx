@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Home() {
+const Home = () => {
   var w = 1397;
   var h = 1468;
   return (
@@ -70,4 +70,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;

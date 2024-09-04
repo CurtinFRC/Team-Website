@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -68,4 +68,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default Home;

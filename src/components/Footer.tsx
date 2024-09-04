@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
-function Footer() {
+const Footer = () => {
   return (
     <div className='footer'>
       <div className='license'>
@@ -24,6 +24,6 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

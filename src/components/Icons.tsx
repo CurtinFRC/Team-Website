@@ -1,6 +1,6 @@
 import { GenIcon } from 'react-icons/lib';
 
-function Logo(props) {
+const Logo = (props) => {
   return GenIcon({
     tag: 'svg',
     attr: { role: 'img', viewBox: '0 0 24 24' },
@@ -15,9 +15,9 @@ function Logo(props) {
       },
     ],
   })(props);
-}
+};
 
-function NewLogo(props) {
+const NewLogo = (props) => {
   return GenIcon({
     tag: 'svg',
     attr: { role: 'img', viewBox: '0 0 24 24' },
@@ -60,9 +60,9 @@ function NewLogo(props) {
       },
     ],
   })(props);
-}
+};
 
-function Arrows(props) {
+const Arrows = (props) => {
   return GenIcon({
     tag: 'svg',
     attr: { role: 'img', viewBox: '0 0 308 24' },
@@ -77,9 +77,9 @@ function Arrows(props) {
       },
     ],
   })(props);
-}
+};
 
-function LinkArrow(props) {
+const LinkArrow = (props) => {
   return GenIcon({
     tag: 'svg',
     attr: { role: 'img', viewBox: '0 0 308 24' },
@@ -94,5 +94,5 @@ function LinkArrow(props) {
       },
     ],
   })(props);
-}
+};
 export { Logo, Arrows, NewLogo, LinkArrow };
