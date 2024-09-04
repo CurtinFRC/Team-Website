@@ -20,7 +20,7 @@ jobs:
       - name: Install Turbo
         run: npm install turbo -g
       - name: Check
-        run: pnpm format
+        run: turbo format
 
   Ubuntu-Build:
     runs-on: ubuntu-latest
