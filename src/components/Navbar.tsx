@@ -29,7 +29,7 @@ const navbarData = {
     },
     {
       title: 'Join',
-      url: 'https://payments.curtin.edu.au/WorkshopsandEvents1/tran?uds_action_data=ZypTcEYwX3NOWCNxRkJDci8jQnRAWUIbWjFCXg5HXEAOQFxR',
+      url: 'http://tiny.cc/FRCMasterClasses',
     },
   ],
 };
