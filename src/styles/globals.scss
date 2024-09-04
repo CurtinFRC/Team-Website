@@ -15,6 +15,17 @@
   display: flex;
 }
 
+#link-group {
+  display: flex;
+  flex-direction: row;
+}
+
+#link {
+  text-decoration: none;
+  color: var(--color-foreground);
+  padding: 1rem;
+}
+
 html,
 body {
   margin: 0;

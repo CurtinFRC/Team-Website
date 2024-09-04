@@ -44,26 +44,37 @@ const Warp = () => {
             robot alliances competing for points. Find out how to get a team
             together for the 2024 competition.
           </p>
-          <div id='parent'>
-            <h2>
-              <Link href='https://www.instagram.com/waroboticsplayoffs/'>
-                Instagram
-              </Link>
-            </h2>
-          </div>
-          <div id='parent'>
-            <h2>
-              <Link href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'>
-                Facebook
-              </Link>
-            </h2>
-          </div>
-          <div id='parent'>
-            <h2>
-              <Link href='https://www.youtube.com/@waroboticsplayoffs'>
-                Youtube
-              </Link>
-            </h2>
+          <div id='link-group'>
+            <div>
+              <h2>
+                <Link
+                  href='https://www.instagram.com/waroboticsplayoffs/'
+                  id='link'
+                >
+                  Instagram
+                </Link>
+              </h2>
+            </div>
+            <div>
+              <h2>
+                <Link
+                  href='https://www.facebook.com/people/WA-Robotics-Playoffs/100094239134377/'
+                  id='link'
+                >
+                  Facebook
+                </Link>
+              </h2>
+            </div>
+            <div>
+              <h2>
+                <Link
+                  href='https://www.youtube.com/@waroboticsplayoffs'
+                  id='link'
+                >
+                  Youtube
+                </Link>
+              </h2>
+            </div>
           </div>
           <p style={{ marginBottom: '5%' }}></p>
         </div>
