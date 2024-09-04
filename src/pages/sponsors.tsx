@@ -11,7 +11,7 @@ const SponsorCategory = ({ title, children }) => {
   );
 };
 
-const Home = () => {
+const Sponsors = () => {
   return (
     <>
       <Head>
@@ -144,4 +144,4 @@ const Home = () => {
 };
 
 export { SponsorCategory };
-export default Home;
+export default Sponsors;
