@@ -21,8 +21,8 @@ const str =
                                                .:..: -:               \n\
 -';
 
-export default class Signature extends React.Component {
-  render() {
-    return <HTMLComment text={str} />;
-  }
-}
+const Signature = () => {
+  return <HTMLComment text={str} />;
+};
+
+export default Signature;
