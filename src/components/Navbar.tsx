@@ -29,7 +29,7 @@ const navbarData = {
     },
     {
       title: 'Join',
-      url: 'http://tiny.cc/FRCMasterClasses',
+      url: 'http://tiny.cc/4788Website',
     },
   ],
 };
