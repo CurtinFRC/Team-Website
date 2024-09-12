@@ -32,7 +32,7 @@ const Sponsors = () => {
           <div className='column' id='diamond-sponsors'>
             <SponsorCategory title='Diamond Sponsors'>
               <Image
-                src='/tmp/Curtin.png'
+                src='/Curtin.png'
                 alt='Curtin University'
                 height={100.5}
                 width={575}
@@ -82,7 +82,7 @@ const Sponsors = () => {
           <div className='column' id='silver-sponsors'>
             <SponsorCategory title='Silver Sponsors'>
               <Image
-                src='/tmp/Altronics.png'
+                src='/Altronics.png'
                 alt='altronics'
                 height={100}
                 width={400}
