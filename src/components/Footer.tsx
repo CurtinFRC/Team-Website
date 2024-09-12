@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaFacebook, FaGithub, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
-  var iconsize = 50;
+  var iconsize = 35;
 
   return (
     <div className='footer'>
