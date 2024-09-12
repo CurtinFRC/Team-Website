@@ -21,7 +21,7 @@ const navbarData = {
     },
     {
       title: 'WARP',
-      url: '/warp',
+      url: 'https://waroboticsplayoffs.com/',
     },
     {
       title: 'Outreach',
