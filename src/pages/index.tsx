@@ -24,11 +24,11 @@ const Home = () => {
         <div className='heros'>
           <h2>Who are we?</h2>
           <p>
-            We are a community FIRST&trade; Robotics Competition team based out of
-            Curtin University from Western Australia (WA). Founded in 2013 we
-            were the very first FIRST&trade; team in WA and have started a variety of
-            First programs here in WA. Along with ths we have also competed very
-            succesfully in FRC for many years.
+            We are a community FIRST&trade; Robotics Competition team based out
+            of Curtin University from Western Australia (WA). Founded in 2013 we
+            were the very first FIRST&trade; team in WA and have started a
+            variety of First programs here in WA. Along with ths we have also
+            competed very succesfully in FRC for many years.
           </p>
           <h2>What do we do?</h2>
           <p>
@@ -43,10 +43,10 @@ const Home = () => {
           </p>
           <h2>Our Vision?</h2>
           <p>
-            Our vision is to IGNITE, IMPROVE, and INNOVATE FIRST&trade; in WA! This is
-            to say that we leap to ignite a passion for STEM in students,
-            improve the world around us for the betterment of all, and innovate
-            programs and solutions on our robots and in our community.
+            Our vision is to IGNITE, IMPROVE, and INNOVATE FIRST&trade; in WA!
+            This is to say that we leap to ignite a passion for STEM in
+            students, improve the world around us for the betterment of all, and
+            innovate programs and solutions on our robots and in our community.
           </p>
         </div>
       </div>
