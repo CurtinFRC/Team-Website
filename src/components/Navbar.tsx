@@ -20,12 +20,12 @@ const navbarData = {
       url: '/sponsors',
     },
     {
-      title: 'WARP',
-      url: 'https://waroboticsplayoffs.com/',
-    },
-    {
       title: 'Outreach',
       url: '/outreach',
+    },
+    {
+      title: 'WARP',
+      url: 'https://waroboticsplayoffs.com/',
     },
     {
       title: 'Join',
