@@ -12,7 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-next": "14.2.11",
     "hamburger-react": "^2.5.0",
     "icon-gen": "^5.0.0",
