@@ -45,8 +45,8 @@ importers:
         version: 1.79.3
     devDependencies:
       '@types/react':
-        specifier: 18.3.5
-        version: 18.3.5
+        specifier: 18.3.10
+        version: 18.3.10
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.1)
@@ -1577,10 +1577,10 @@ packages:
         integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==,
       }
 
-  '@types/react@18.3.5':
+  '@types/react@18.3.10':
     resolution:
       {
-        integrity: sha512-WeqMfGJLGuLCqHGYRGHxnKrXcTitc6L/nBUWfWPcTarG3t9PsquqUMuVeXZeca+mglY4Vo5GZjCi0A3Or2lnxA==,
+        integrity: sha512-02sAAlBnP39JgXwkAq3PeU9DVaaGpZyF3MGcC0MKgQVkZor5IiiDAipVaxQHtDJAmO4GIy/rVBy/LzVj76Cyqg==,
       }
 
   '@types/resolve@1.17.1':
@@ -6105,7 +6105,7 @@ snapshots:
 
   '@types/prop-types@15.7.12': {}
 
-  '@types/react@18.3.5':
+  '@types/react@18.3.10':
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
