@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Marquee from "react-fast-marquee";
-import { Arrows } from "../components/Icons";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import Head from 'next/head';
+import Marquee from 'react-fast-marquee';
+import { Arrows } from '../components/Icons';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const Outreach = () => {
   const [imageWidth, setImageWidth] = useState(1000);
@@ -16,10 +16,10 @@ const Outreach = () => {
       }
     };
 
-    handleResize(); 
-    window.addEventListener("resize", handleResize);
+    handleResize();
+    window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
@@ -27,26 +27,26 @@ const Outreach = () => {
       <Head>
         <title> Outreach </title>
         <meta
-          name="description"
+          name='description'
           content="A summary of Curtin FRC's Outreach Programs"
         />
       </Head>
-      <div className="page">
-        <div className="hero-no-padding">
-          <div className="column">
+      <div className='page'>
+        <div className='hero-no-padding'>
+          <div className='column'>
             <Marquee speed={25} gradient={false} style={{ opacity: 0.8 }}>
               <h1>Outreach</h1>
             </Marquee>
-            <Arrows className="arrows" />
+            <Arrows className='arrows' />
           </div>
         </div>
 
-        <div className="heros">
-          <h4 className="h1-normal">ROBO ACADEMY</h4>
-          <div className="image-container">
+        <div className='heros'>
+          <h4 className='h1-normal'>ROBO ACADEMY</h4>
+          <div className='image-container'>
             <Image
-              src="https://s30991.pcdn.co/engage/wp-content/uploads/sites/6/2022/02/Robotics-high-shot-aspect-ratio-2-1.jpg.webp"
-              alt="Robo Academy"
+              src='https://s30991.pcdn.co/engage/wp-content/uploads/sites/6/2022/02/Robotics-high-shot-aspect-ratio-2-1.jpg.webp'
+              alt='Robo Academy'
               width={imageWidth}
               height={(imageWidth / 1000) * 600}
             />
