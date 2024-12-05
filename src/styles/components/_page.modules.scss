@@ -1,5 +1,9 @@
 @use '../abstracts/index.module' as var;
 
+html{
+  overflow-x: hidden;
+}
+
 .page {
   position: inherit;
   z-index: 1;
@@ -290,5 +294,50 @@
 
   h2 {
     font-size: var.$title-size - 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .column {
+    width: 100%;
+    margin: 10px 0;
+
+    #diamond-sponsors,
+    #gold-sponsors,
+    #silver-sponsors,
+    #bronze-sponsors {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+
+  .sponsor-category {
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .sponsor-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 5px 0;
+      }
+    }
   }
 }
