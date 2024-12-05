@@ -298,30 +298,23 @@ html{
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
-    padding: 20px;
-    min-height: auto;
-  }
-
-  .column {
-    width: 100%;
-    margin: 10px 0;
-
-    #diamond-sponsors,
-    #gold-sponsors,
-    #silver-sponsors,
-    #bronze-sponsors {
-      width: 90%;
-      margin: 10px auto;
-    }
-  }
-
-  .sponsor-category {
+  .marquee {
     h2 {
-      font-size: 1.2rem;
-      text-align: center;
+      text-shadow: unset;
     }
+  }
 
+  .logo {
+    height: 15em;
+  }
+
+  h1 {
+    font-size: var.$heading-size-mobile;
+  }
+
+  h2 {
+    font-size: var.$title-size - 10;
+  }
     .sponsor-content {
       display: flex;
       flex-direction: column;
@@ -339,5 +332,4 @@ html{
         margin: 5px 0;
       }
     }
-  }
 }

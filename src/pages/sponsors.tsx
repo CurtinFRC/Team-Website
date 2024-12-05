@@ -24,18 +24,17 @@ const Sponsors = () => {
             speed={25}
             gradient={false}
             direction='left'
-            className='marquee'
+            style={{ opacity: 1 }}
           >
             <h1>Sponsors</h1>
           </Marquee>
 
-          <div id='diamond-sponsors' className='column'>
+          <div className='column' id='diamond-sponsors'>
             <SponsorCategory title='Diamond Sponsors'>
               <Image
                 src='/Curtin.png'
                 alt='Curtin University'
-                layout='intrinsic'
-                height={100}
+                height={100.5}
                 width={575}
               />
               <p>
@@ -46,13 +45,11 @@ const Sponsors = () => {
               </p>
             </SponsorCategory>
           </div>
-
-          <div id='gold-sponsors' className='column'>
+          <div className='column' id='gold-sponsors'>
             <SponsorCategory title='Gold Sponsors'>
               <Image
                 src='/pathways.png'
                 alt='Pathways'
-                layout='intrinsic'
                 height={200}
                 width={600}
               />
@@ -63,8 +60,7 @@ const Sponsors = () => {
               </p>
               <Image
                 src='/Artifactory.png'
-                alt='Artifactory'
-                layout='intrinsic'
+                alt='artifactory'
                 height={100}
                 width={300}
               />
@@ -72,11 +68,77 @@ const Sponsors = () => {
                 The Perth Artifactory is the Hackerspace/Makerspace in Perth,
                 Western Australia.
               </p>
+              <Image
+                src='/tengineer.png'
+                alt='turner engineering'
+                height={100}
+                width={300}
+              />
+              <p>
+                Wholesaler household appliances in Bibra Lake, Western Australia
+              </p>
             </SponsorCategory>
           </div>
-          {/* Add other sponsor sections here */}
+          <div className='column' id='silver-sponsors'>
+            <SponsorCategory title='Silver Sponsors'>
+              <Image
+                src='/Altronics.png'
+                alt='altronics'
+                height={100}
+                width={400}
+              />
+              <p>
+                Altronics is a fully Australian owned and operated company that
+                supplies electronic components and finished goods to customers
+                throughout Australia and around the world.
+              </p>
+              <Image
+                src='rockwell.svg'
+                alt='rockwell automation'
+                height={100}
+                width={300}
+              />
+              <p>
+                Rockwell Automation, Inc. is an American provider of industrial
+                automation and digital transformation technologies.
+              </p>
+              <Image
+                src='/curry.png'
+                alt='curry curry curry'
+                height={100}
+                width={300}
+              />
+              <p>
+                Traditional Indian plates served in a mellow locale with a
+                display of grab-&-go snacks & desserts.
+              </p>
+              <Image
+                src='/arabia.webp'
+                alt='arab association'
+                height={163}
+                width={170}
+              />
+              <p>
+                The Australian Arab Association of WA operates as a non-profit,
+                non-political, and non-religious organization. Our primary
+                objective is to offer support to Culturally and Linguistically
+                Diverse (CaLd) communities in Australia.
+              </p>
+            </SponsorCategory>
+          </div>
+          <div id='bronze-sponsors' className='column'>
+            <SponsorCategory title='Bronze Sponsors'>
+              <Image src='noctus.svg' alt='noctus' height={90} width={300} />
+              <p>
+                Noctus 3D design, source and manufacture a wide range of
+                affordable High-performance 3D Printer parts and kits, with a
+                particular focus on speed-printing and Voron machines.
+              </p>
+            </SponsorCategory>
+          </div>
         </div>
       </div>
+      <div className='heros'></div>
     </>
   );
 };
