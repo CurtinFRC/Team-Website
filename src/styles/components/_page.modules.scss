@@ -315,21 +315,21 @@ html {
   h2 {
     font-size: var.$title-size - 10;
   }
-    .sponsor-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  .sponsor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      img {
-        max-width: 100%;
-        height: auto;
-        margin: 10px 0;
-      }
-
-      p {
-        text-align: center;
-        font-size: 0.9rem;
-        margin: 5px 0;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
     }
+
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+  }
 }
