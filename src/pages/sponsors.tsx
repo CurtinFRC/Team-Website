@@ -4,10 +4,10 @@ import Marquee from 'react-fast-marquee';
 
 const SponsorCategory = ({ title, children }) => {
   return (
-    <>
+    <div className='sponsor-category'>
       <h2>{title}</h2>
-      {children}
-    </>
+      <div className='sponsor-content'>{children}</div>
+    </div>
   );
 };
 

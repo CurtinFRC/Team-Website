@@ -1,5 +1,9 @@
 @use '../abstracts/index.module' as var;
 
+html {
+  overflow-x: hidden;
+}
+
 .page {
   position: inherit;
   z-index: 1;
@@ -290,5 +294,42 @@
 
   h2 {
     font-size: var.$title-size - 10;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .marquee {
+    h2 {
+      text-shadow: unset;
+    }
+  }
+
+  .logo {
+    height: 15em;
+  }
+
+  h1 {
+    font-size: var.$heading-size-mobile;
+  }
+
+  h2 {
+    font-size: var.$title-size - 10;
+  }
+  .sponsor-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
   }
 }

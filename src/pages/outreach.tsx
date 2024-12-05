@@ -2,8 +2,26 @@ import Head from 'next/head';
 import Marquee from 'react-fast-marquee';
 import { Arrows } from '../components/Icons';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const Outreach = () => {
+  const [imageWidth, setImageWidth] = useState(1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.screen.width < 1000) {
+        setImageWidth(window.screen.width - 20); // Add padding/margin
+      } else {
+        setImageWidth(1000);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <Head>
@@ -24,14 +42,15 @@ const Outreach = () => {
         </div>
 
         <div className='heros'>
-          {/* placeholders */}
           <h4 className='h1-normal'>ROBO ACADEMY</h4>
-          <Image
-            src='https://s30991.pcdn.co/engage/wp-content/uploads/sites/6/2022/02/Robotics-high-shot-aspect-ratio-2-1.jpg.webp'
-            alt='Robo Academy'
-            width={1000}
-            height={600}
-          />
+          <div className='image-container'>
+            <Image
+              src='https://s30991.pcdn.co/engage/wp-content/uploads/sites/6/2022/02/Robotics-high-shot-aspect-ratio-2-1.jpg.webp'
+              alt='Robo Academy'
+              width={imageWidth}
+              height={(imageWidth / 1000) * 600}
+            />
+          </div>
           <p>
             Robot Academy is school holiday workshops for children interested in
             coding and robotics. With beginners, intermediate and advanced
