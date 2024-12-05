@@ -121,15 +121,16 @@
   }
 
   .robot-info-left {
-    //margin-top: 8%;
     margin-left: 5%;
     margin-right: 5%;
     position: relative;
+
+    // Default: Desktop Layout (image and text side by side)
     display: flex;
     justify-content: center;
+
     p {
       text-align: left;
-      float: right;
       padding: 2%;
     }
 
@@ -140,30 +141,38 @@
     }
 
     img {
-      float: left;
       margin: 50px;
       margin-top: 0%;
-      width: 100%;
+      width: 50%;
       height: auto;
+      border-radius: 2%;
       filter: drop-shadow(0px 0px 15px var.$color-foreground);
       transition: filter 0.5s;
-      border-radius: 2%;
     }
 
     img:hover {
       filter: drop-shadow(0px 0px 25px var.$color-foreground);
     }
 
-    h3 {
-      color: var.$color-foreground;
-    }
+    // Mobile Layout (image on top, text below)
+    @media (max-width: 768px) {
+      flex-direction: column; // Stack items vertically
+      align-items: center; // Center items horizontally
 
-    img {
-      float: right;
-      margin: 50px;
-      margin-top: 0%;
-      width: 50%;
-      height: auto;
+      img {
+        width: 100%; // Full width for mobile
+        margin: 0; // Remove margin to ensure proper spacing
+      }
+
+      h3 {
+        font-size: 90%; // Slightly smaller text size for mobile
+        margin-top: 5%;
+      }
+
+      p {
+        text-align: center; // Center-align text for mobile
+        font-size: 90%;
+      }
     }
   }
   #logo-effect {
