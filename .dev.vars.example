@@ -1,0 +1,5 @@
+# Copy to .dev.vars (gitignored) for `npx wrangler pages dev out`.
+# See functions/README.md for what each variable does and when it's required.
+
+RESEND_KEY=
+TURNSTILE_SECRET=

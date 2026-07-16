@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #111111; /* page background */
+  --color-surface: #222222; /* cards/sections */
+  --color-surface-alt: #fefefa; /* light bands (sponsor strip) */
+  --color-ink: #ffffff;
+  --color-ink-muted: #999999;
+  /* #888888 fails WCAG AA (4.48:1) against --color-surface at 12px; bumped to pass at 5.31:1. */
+  --color-ink-faint: #959595;
+  --color-brand: #ec0080; /* headings/accents/large text only */
+  --color-brand-bright: #ff4da6; /* links & small text (contrast-safe) */
+  --color-focus: #0099ff;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-mono: var(--font-fragment-mono), monospace;
+  --radius-input: 8px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}

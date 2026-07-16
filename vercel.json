@@ -1,9 +1,0 @@
-{
-  "buildCommand": "turbo build lint",
-  "cleanUrls": true,
-  "devCommand": "turbo dev",
-  "framework": "nextjs",
-  "installCommand": "pnpm install",
-  "outputDirectory": ".next",
-  "public": false
-}

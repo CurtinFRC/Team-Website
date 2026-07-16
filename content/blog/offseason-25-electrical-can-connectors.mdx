@@ -1,0 +1,51 @@
+---
+title: "Offseason `25 | Electrical CAN Connectors"
+date: "2025-12-29"
+summary: "Describes five custom PCB designs (Rio Hub, Rio Module, Swerve Hub, Swerve Module, and a Rio Hub Regulator) that route CAN, 12V, and DIO signals over RJ45 cabling to make the 2026 robot's electrical wiring easier to diagnose and reroute."
+tags: ["electrical"]
+---
+
+![Desk containing our CAN pcbs in progress](/images/original/pbEGZwYajsQJP8lnuXHlqP0bc.jpg)
+
+Going into the new season we identified that one area we wanted to improve on for our 2026 robots was our electrical robustness as we had multiple issues between competitions and during build season with electrical that slowed us down greatly.
+
+## Solution Overview
+
+One of these issues was an inability to quickly identify and diagnose CANBus issues as all connections were soldered, to fix this issue we will use 5 custom PCB designs to route both our RIO and CANivore CANBuses, as well as 12V and DIO lines (for RIO network only) over standard RJ45 (ethernet) cabling, allowing for quick disconnection and rerouting of CAN signals, whilst retaining a robust connection
+
+## Designs
+
+### Rio Hub
+
+![Rio Hub PCB CAD render](/images/original/JO6moAwGFxt4m3WPUN7wLbYJaJU.png)
+
+The Rio Hub acts as a connection between the RoboRio's CANBus output and the RJ45 Bus that connects to it. The board also provides reverse polarity protection and voltage regulation (if the regulator is installed) for 12v supply, 4 DIO lines over RJ45 and 8 through Molex SL connectors, 2 PWM lines for servos over Molex SL connectors and the board mounts to the MXP port of a RoboRIO
+
+### Rio Module
+
+![Rio Module PCB CAD render](/images/original/UEaHrix91ncg1mCc6NrQCjHhw.png)
+
+The Rio modules act as nodes to connect one or more CAN devices to the network, they also provide DIO access and 12v output, they can be soldered to terminate the bus.
+
+### Swerve Hub
+
+![Swerve Hub PCB CAD render](/images/original/iVxIEVNmCRU4YZioCdEbMC5Z5o.png)
+
+Functions similarly to the Rio Hub, without DIO lines, PWM or voltage regulation, has mounting holes that line up with the CANivore mounting holes
+
+### Swerve Module
+
+![Swerve Module PCB CAD render](/images/original/kQJnKVd11ll6S2akhZar1Ao6T6E.png)
+
+Functions similarly to the Rio Modules but without DIO access, it is compatible with Rio modules and Hubs, but won't pass through the DIO lines (to be fixed in the next iteration)
+
+### Rio Hub Regulator
+
+![Rio Hub Regulator PCB CAD render](/images/original/3j0q9UByZzAu4ZP5TFarOdDxhrw.png)
+
+A simple 8V-22V to 12V regulator that can be plugged into the Rio Hub and held down with the mounting hole (not lined up correctly in current version)
+
+## Downloads
+
+- [GitHub - Files](https://github.com/CurtinFRC/CAN-over-RJ45)
+- [GitHub - Releases](https://github.com/CurtinFRC/CAN-over-RJ45/releases/)

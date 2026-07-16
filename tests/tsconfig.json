@@ -1,0 +1,18 @@
+{
+  // The root tsconfig excludes tests/ (and functions/) so `next build`'s
+  // typecheck doesn't need Workers globals; this config restores static
+  // type coverage for the test files. Check with:
+  //   npx tsc -p tests/tsconfig.json --noEmit
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    // contact-function.test.ts imports the Pages Function, which uses the
+    // PagesFunction global. skipLibCheck (inherited) absorbs the known
+    // Request/Response overlaps between workers-types and lib.dom.
+    "types": ["node", "@cloudflare/workers-types"],
+    "incremental": false
+  },
+  "include": ["**/*.ts"],
+  // Reset the inherited exclude, which (resolved against the root config's
+  // directory) would exclude tests/ itself.
+  "exclude": ["../node_modules"]
+}
